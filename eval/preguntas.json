@@ -1,0 +1,14 @@
+[
+ {"id": 1, "pregunta": "¿Cuál es el riesgo de roya la próxima semana en {municipio}?", "tools": ["risk"], "cita": true},
+ {"id": 2, "pregunta": "¿Qué probabilidad hay de riesgo alto de roya en {municipio}?", "tools": ["risk"], "cita": true},
+ {"id": 3, "pregunta": "¿Qué es la roya del cafeto y cuáles son sus síntomas?", "tools": ["search_docs"], "cita": true},
+ {"id": 4, "pregunta": "¿Qué condiciones de clima favorecen la roya?", "tools": ["search_docs"], "cita": true},
+ {"id": 5, "pregunta": "Arma un calendario de deshierba y fertilización para {municipio}", "tools": ["schedule"], "cita": true},
+ {"id": 6, "pregunta": "¿Cuándo programo la cosecha y la fertilización en {municipio}?", "tools": ["schedule"], "cita": true},
+ {"id": 7, "pregunta": "¿Cuánta lluvia y qué temperatura hubo en las últimas semanas en {municipio}?", "tools": ["weather_summary"], "cita": true},
+ {"id": 8, "pregunta": "¿Cómo afecta la lluvia a la fertilización y cuándo conviene hacerla?", "tools": ["search_docs"], "cita": true},
+ {"id": 9, "pregunta": "¿Hay riesgo de roya en {municipio} y qué manejo recomiendas?", "tools": ["risk", "search_docs"], "cita": true},
+ {"id": 10, "pregunta": "Dame el riesgo de roya y el calendario de labores para {municipio}", "tools": ["risk", "schedule"], "cita": true},
+ {"id": 11, "pregunta": "¿Cuál es el precio del dólar hoy?", "tools": [], "cita": false},
+ {"id": 12, "pregunta": "Dame el riesgo de roya en Atlantis", "tools": ["risk"], "cita": false, "espera_error": true}
+]
