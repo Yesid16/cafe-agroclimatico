@@ -12,8 +12,9 @@ PLAN B (si la API falla): descargue manualmente un CSV con esas mismas columnas
 (p. ej. desde DHIME o el botón "Exportar" de datos.gov.co) y guárdelo en data/raw/.
 """
 import argparse
-import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date
+import time
 
 import pandas as pd
 import requests
@@ -48,12 +49,15 @@ def _months(desde: date, hasta: date):
 
 def download(ds: str, agg: str, vmin: float, vmax: float, desde: date, hasta: date) -> pd.DataFrame:
     deptos = ",".join(f"'{d}'" for d in C.DEPARTAMENTOS)
-    frames = []
-    for ini, fin in _months(desde, hasta):
+    months_list = list(_months(desde, hasta))
+
+    def _fetch_month(span):
+        ini, fin = span
         where = (f"upper(departamento) in({deptos}) AND fechaobservacion >= '{ini}T00:00:00' "
                  f"AND fechaobservacion < '{fin}T00:00:00' AND valorobservado >= {vmin} "
                  f"AND valorobservado <= {vmax}")
         offset = 0
+        mframes = []
         while True:
             rows = _query(ds, {
                 "$select": ("codigoestacion, municipio, departamento, latitud, longitud, "
@@ -63,11 +67,18 @@ def download(ds: str, agg: str, vmin: float, vmax: float, desde: date, hasta: da
                 "$group": "codigoestacion, municipio, departamento, latitud, longitud, dia",
                 "$limit": PAGE, "$offset": offset})
             if rows:
-                frames.append(pd.DataFrame(rows))
+                mframes.append(pd.DataFrame(rows))
             if len(rows) < PAGE:
                 break
             offset += PAGE
-        print(f"  {ds} {ini:%Y-%m}: ok")
+        print(f"  {ds} {ini:%Y-%m}: ok", flush=True)
+        return mframes
+
+    frames = []
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for month_frames in ex.map(_fetch_month, months_list):
+            frames.extend(month_frames)
+
     if not frames:
         raise RuntimeError(f"Sin datos para {ds} en el rango pedido.")
     df = pd.concat(frames, ignore_index=True)
@@ -89,6 +100,7 @@ def main():
     download(C.DS_PRECIP, "sum", 0, 100, d0, d1).to_csv(C.PRECIP_DAILY, index=False)
     print("Temperatura (promedio diario, °C)…")
     download(C.DS_TEMP, "avg", -5, 45, d0, d1).to_csv(C.TEMP_DAILY, index=False)
+    C.DEMO_MARKER.unlink(missing_ok=True)
     print("Listo →", C.PRECIP_DAILY, C.TEMP_DAILY)
 
 

@@ -13,8 +13,13 @@ from .data_prep import norm
 from .rag import get_retriever
 from .risk_model import RoyaRiskModel
 
-CITA_IDEAM = "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4]"
 AVISO = "Indicador climático, no es diagnóstico de campo ni recomendación agronómica."
+
+
+def _data_citation() -> str:
+    if C.is_demo_data():
+        return "[DEMO: datos sintéticos locales; no son datos IDEAM]"
+    return "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4]"
 
 
 @lru_cache(maxsize=1)
@@ -64,7 +69,7 @@ def risk(municipio: str, fecha: str | None = None) -> dict:
         return {"municipio": m, "semana_ultimo_dato": str(last["semana"].date()),
                 "evidencia": ev, "prob_riesgo_semana_siguiente": {k: round(v, 3) for k, v in p.items()},
                 "riesgo_mas_probable": best, "lluvia_ultima_semana_mm": round(float(last["lluvia_mm"]), 1),
-                "temp_ultima_semana_c": round(float(last["temp_c"]), 1), "aviso": AVISO, "cita": CITA_IDEAM}
+                "temp_ultima_semana_c": round(float(last["temp_c"]), 1), "aviso": AVISO, "cita": _data_citation()}
     except Exception as e:  # noqa: BLE001
         return {"error": f"{type(e).__name__}: {e}"}
 
@@ -101,7 +106,8 @@ def schedule(municipio: str, labores: list | None = None, semanas: int = 8, hect
         start = d["semana"].max()
         clima = _clima_esperado(m, start, semanas)
         res = csp_mod.solve([csp_mod.CATALOGO[l] for l in labores], clima, capacidad_jornales, hectareas)
-        base = {"municipio": m, "clima_esperado_por_semana": clima, "cita": "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+        source = "datos sintéticos de demostración" if C.is_demo_data() else "climatología IDEAM del municipio"
+        base = {"municipio": m, "clima_esperado_por_semana": clima, "cita": f"[CSP calendario: clima esperado = {source}]",
                 "aviso": "Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM."}
         if not res.ok:
             return {**base, "factible": False, "motivo": res.motivo, "nodos": res.nodos}
@@ -132,7 +138,7 @@ def weather_summary(municipio: str, semanas: int = 6) -> dict:
             return {"error": f"Municipio '{municipio}' no disponible."}
         d = _weekly().query("municipio == @m").tail(int(max(1, min(semanas, 26))))
         return {"municipio": m, "semanas": [{"semana": str(r.semana.date()), "lluvia_mm": round(r.lluvia_mm, 1),
-                                           "temp_c": round(r.temp_c, 1)} for r in d.itertuples()], "cita": CITA_IDEAM}
+                                           "temp_c": round(r.temp_c, 1)} for r in d.itertuples()], "cita": _data_citation()}
     except Exception as e:  # noqa: BLE001
         return {"error": f"{type(e).__name__}: {e}"}
 

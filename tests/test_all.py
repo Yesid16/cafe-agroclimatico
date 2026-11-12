@@ -69,7 +69,8 @@ def test_rag():
 def test_agent_tools_and_errors(pipeline):
     mun = tools.municipios()[0]
     o = run_agent(f"¿Cuál es el riesgo de roya en {mun.title()}?", {"municipio": mun}, force_mock=True)
-    assert [t["tool"] for t in o["trace"]] == ["risk"] and "[IDEAM" in o["answer"]
+    expected_source = "[DEMO" if C.is_demo_data() else "[IDEAM"
+    assert [t["tool"] for t in o["trace"]] == ["risk"] and expected_source in o["answer"]
     o = run_agent("Dame el riesgo de roya en Atlantis", {}, force_mock=True)
     assert "error" in o["trace"][0]["result"]
     o = run_agent("¿Cuál es el precio del dólar hoy?", {}, force_mock=True)

@@ -19,6 +19,9 @@ if not (C.WEEKLY.exists() and C.MODEL_PATH.exists()):
     st.error("Faltan datos o modelo. Ejecute (ver README): `python -m cafe.data_download && python -m cafe.data_prep && python -m cafe.risk_model`")
     st.stop()
 
+if C.is_demo_data():
+    st.warning("MODO DEMO: los datos son sintéticos y solo sirven para probar la aplicación. No representan observaciones IDEAM ni deben usarse para análisis o informes.")
+
 W = T._weekly()
 MUNS = T.municipios()
 
@@ -56,7 +59,8 @@ with tabs[0]:
                              zoom=7, height=520, category_orders={"riesgo": ["Bajo", "Medio", "Alto"]})
         fig.update_layout(map_style="open-street-map", margin=dict(l=0, r=0, t=0, b=0))
         st.plotly_chart(fig, width="stretch")
-        st.caption("Color = riesgo climático más probable de roya la semana siguiente; tamaño = P(riesgo Alto). Municipios con estaciones IDEAM.")
+        source = "datos sintéticos de demostración" if C.is_demo_data() else "municipios con estaciones IDEAM"
+        st.caption(f"Color = riesgo climático más probable de roya la semana siguiente; tamaño = P(riesgo Alto). Fuente: {source}.")
 
 # ------------------------- Series -------------------------
 with tabs[1]:
@@ -70,7 +74,8 @@ with tabs[1]:
     f.update_yaxes(title_text="°C", secondary_y=True)
     f.update_layout(height=450, legend=dict(orientation="h"), margin=dict(t=30))
     st.plotly_chart(f, width="stretch")
-    st.caption("Fuente: IDEAM (datos.gov.co), agregado semanal y promediado entre las estaciones del municipio. Datos crudos no validados.")
+    source = "datos sintéticos locales (demo)" if C.is_demo_data() else "IDEAM (datos.gov.co)"
+    st.caption(f"Fuente: {source}, agregado semanal y promediado entre las estaciones del municipio. Datos crudos no validados.")
 
 # ------------------------- Pronóstico -------------------------
 with tabs[2]:

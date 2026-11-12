@@ -7,6 +7,11 @@ DATA_RAW = ROOT / "data" / "raw"
 DATA_PROC = ROOT / "data" / "processed"
 CORPUS_DIR = ROOT / "corpus"
 RESULTS_DIR = ROOT / "results"
+DEMO_MARKER = DATA_RAW / ".synthetic_demo"
+
+
+def is_demo_data() -> bool:
+    return DEMO_MARKER.exists()
 
 # Carga opcional de .env (sin dependencia dura)
 _env = ROOT / ".env"

@@ -17,7 +17,7 @@ IDEAM en datos.gov.co (API Socrata): precipitación `s54a-sgyg` (lectura cada 10
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env                                   # opcional: agregue LLM_API_KEY (Groq/NIM/Ollama)
+cp -n .env.example .env                                # .env va en esta carpeta; agregue su clave localmente
 python -m cafe.data_download --desde 2022-01-01        # 1. descarga (varios minutos)
 python -m cafe.data_prep                               # 2. agrega a municipio-semana
 python -m cafe.risk_model                              # 3. entrena, evalúa vs. líneas base y guarda el modelo
@@ -25,6 +25,10 @@ python -m cafe.evaluate_agent                          # 4. evalúa el agente (1
 streamlit run app.py                                   # 5. dashboard
 ```
 Todo en uno: `./run_all.sh`. Pruebas automáticas (usan datos SINTÉTICOS solo para probar el código): `pytest -q`.
+
+**Prueba local sin descargar datos:** ejecute `python -m cafe.demo_data` y luego `streamlit run app.py`. Crea datos sintéticos, muestra un aviso en el dashboard y no genera métricas de evaluación. No los use para análisis ni informes. El comando no sobrescribe CSV existentes; para volver a datos reales, ejecute la descarga completa.
+
+El archivo `.env` debe estar en la raíz del proyecto y no se comparte ni se sube a Git. Cada persona debe configurar su propia `LLM_API_KEY`; sin clave el chat funciona en modo determinista local.
 
 **Corpus RAG:** `corpus/notas_*.md` son notas de síntesis del equipo (no oficiales). Agregue PDF abiertos de Cenicafé/FNC/IDEAM (ver `corpus/FUENTES.md`, `python -m cafe.fetch_corpus`); se indexan automáticamente.
 

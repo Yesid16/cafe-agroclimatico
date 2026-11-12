@@ -200,6 +200,7 @@ def main():
     # modelo final: entrena con todos los datos para pronosticar hacia adelante
     from cafe.risk_model import RoyaRiskModel as _M  # evita pickle con módulo __main__
     _M().fit(weekly).save()
+    C.DEMO_MARKER.unlink(missing_ok=True)
     print("Modelo guardado en", C.MODEL_PATH)
 
 
