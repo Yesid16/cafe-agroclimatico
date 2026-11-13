@@ -1,17 +1,25 @@
-# Declaración de uso de IA generativa
+# Declaración de uso de inteligencia artificial generativa
+SI3003 · EAFIT · Grupo Jueves · Proyecto 3.5
+Jhon Jairo Pulgarin, Yesid Hurtado y Frank López
 
-**SI3003, EAFIT · Proyecto 3.5 · Grupo Jueves**
-**Jhon Jairo Pulgarin, Yesid Hurtado y Frank López**
-Fecha de revisión: 12 de noviembre de 2026. Códigos institucionales pendientes de completar si se requieren.
+## Herramientas utilizadas
 
-| Herramienta | Propósito | Alcance |
+La documentación previa del repositorio atribuye a Claude, de Anthropic, el apoyo al andamiaje inicial, los borradores de módulos, las pruebas y la documentación. El alcance de ese uso histórico está sujeto a confirmación por los integrantes.
+
+Codex, de OpenAI, se utilizó para revisar las instrucciones y el código; ajustar controles de datos, temporalidad y evaluación; preparar la ejecución en Colab; mejorar la interfaz; revisar la conexión con NVIDIA y organizar los documentos de entrega.
+
+NVIDIA NIM sirve el modelo nvidia/nemotron-3.5-lightning-30b-a3b del agente. Su función es interpretar consultas, solicitar herramientas y redactar respuestas apoyadas en los datos y documentos recuperados. Las evaluaciones conservan las respuestas originales y las entregadas después del control de citas.
+
+## Verificación y responsabilidad
+
+El equipo ejecutó el procesamiento, entrenamiento y evaluación originales en Colab y recuperó los resultados. La revisión posterior incluyó pruebas de implementación, auditoría de datos y una reevaluación remota autorizada. Los experimentos de entrenamiento no se realizaron en el equipo local.
+
+El uso de estas herramientas no sustituye la revisión del trabajo ni la comprensión de sus métodos. Los resultados y las limitaciones se conservan en los documentos de entrega. La confirmación de los aportes individuales y del uso histórico de IA corresponde a cada integrante.
+
+## Aportes individuales
+
+| Integrante | Aportes realizados | Confirmación de revisión |
 |---|---|---|
-| Claude (Anthropic), según la declaración previa del repositorio | Andamiaje inicial, borradores de módulos, pruebas y documentación | El equipo debe confirmar el uso histórico exacto |
-| Codex (OpenAI) | Revisión de la guía y código; detección/corrección de filtros, temporalidad, evaluación y configuración; preparación de ejecución en Colab y documentación | Cambios de esta revisión y pruebas pequeñas; no se ejecutaron experimentos reales de entrenamiento en el PC |
-| NVIDIA NIM, nvidia/nemotron-3.5-lightning-30b-a3b | LLM remoto del agente con llamadas a herramientas | Evaluación original de doce preguntas ejecutada por el equipo en Colab; reevaluación remota autorizada explícitamente, con control de citas y registro separado |
-
-**Actividades verificadas en esta sesión:** el equipo ejecutó el pipeline en Colab y recuperó el ZIP con datos, modelo y evaluaciones. La revisión Codex auditó esos resultados, añadió controles de citas, reevaluó el agente con autorización y preparó el informe de cuatro páginas. Quedan por confirmar la revisión de sensores, la demo interactiva y la comprensión por cada integrante. El reparto individual y las actividades efectivamente realizadas deben documentarse por los integrantes antes de entregar; esta declaración no certifica trabajo aún no ejecutado.
-
-**Comprensión pendiente de confirmación por cada integrante:** eliminación de variables y CPT, suavizado, objetivo heurístico y split temporal, restricciones y heurísticas del CSP, recuperación documental, tool calling, significado de métricas y limitaciones. No se afirma que el equipo ya haya revisado o comprendido todo el código.
-
-Las notas del corpus y los jornales/ventanas del CSP son aproximaciones exploratorias, no parámetros validados por un agrónomo. Las publicaciones originales tienen atribución en corpus/FUENTES.md. No se incluyen datos sintéticos como evidencia de desempeño real, ni se inventan resultados para llenar el informe. El uso de IA está declarado; la responsabilidad de verificar y comprender la entrega es del equipo.
+| Jhon Jairo Pulgarin | [Por registrar] | [Por confirmar] |
+| Yesid Hurtado | [Por registrar] | [Por confirmar] |
+| Frank López | [Por registrar] | [Por confirmar] |

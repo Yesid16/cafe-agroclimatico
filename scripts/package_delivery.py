@@ -3,7 +3,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT=Path(__file__).resolve().parents[1]
-TOP={'cafe','corpus','docs','eval','tests','notebooks','scripts','assets'}
+TOP={'cafe','corpus','docs','eval','tests','notebooks','scripts','assets','Docs_Entregables'}
 ROOTFILES={'README.md','INFORME.md','requirements.txt','requirements-cloud.txt','pytest.ini',
            'app.py','run_all.sh','.env.example','.gitignore','.streamlit/config.toml'}
 DATA={'data/processed/clima_semanal.csv','data/processed/semanal.csv','data/processed/modelo_roya.pkl','data/review/processed/semanal.csv','data/review/processed/modelo_roya.pkl'}

@@ -1,0 +1,49 @@
+{
+  "desde": "2022-01-01",
+  "hasta_inclusive": "2026-10-31",
+  "datasets": [
+    {
+      "id": "s54a-sgyg",
+      "url": "https://www.datos.gov.co/resource/s54a-sgyg.json",
+      "archivo": "precip_diaria.csv",
+      "agregacion": "sum",
+      "unidad": "mm",
+      "lecturas_esperadas_dia": 144,
+      "filtro_valor": [
+        0,
+        100
+      ],
+      "filas": 78264,
+      "sha256": "0b7befce8c3c102ac4bbcaac8eb1466100ca28d33c859c8b933ab71e0787ff2b"
+    },
+    {
+      "id": "sbwg-7ju4",
+      "url": "https://www.datos.gov.co/resource/sbwg-7ju4.json",
+      "archivo": "temp_diaria.csv",
+      "agregacion": "avg",
+      "unidad": "°C",
+      "lecturas_esperadas_dia": 24,
+      "filtro_valor": [
+        -5,
+        45
+      ],
+      "filas": 55224,
+      "sha256": "d41fb1c892ba36c60b2dee10aa2de99a23bb939f8dae7ee77db208625a08e29f"
+    },
+    {
+      "id": "uext-mhny",
+      "url": "https://www.datos.gov.co/resource/uext-mhny.json",
+      "archivo": "humedad_diaria.csv",
+      "agregacion": "avg",
+      "unidad": "%",
+      "lecturas_esperadas_dia": 24,
+      "filtro_valor": [
+        0,
+        100
+      ],
+      "filas": 55516,
+      "sha256": "a90d262a31c87bb1cb5e8b5e7e3cda2a4c3e72a22d76d7437ec8539e129d853d"
+    }
+  ],
+  "descargado_utc": "2026-11-13T04:28:18.521072+00:00"
+}
