@@ -1,6 +1,7 @@
 """RAG sobre el corpus de corpus/ (.md, .txt, .pdf). Backend TF-IDF (por defecto, sin descargas)
 o embeddings multilingües (sentence-transformers + FAISS si está instalado, si no numpy)."""
 import re
+import json
 from pathlib import Path
 
 import numpy as np
@@ -16,6 +17,8 @@ def _read(path: Path) -> str:
 
 
 def chunk(text: str, size: int = 110, overlap: int = 25):
+    if size <= 0 or not 0 <= overlap < size:
+        raise ValueError("Se requiere 0 <= overlap < size")
     words = text.split()
     step = size - overlap
     for i in range(0, max(len(words) - overlap, 1), step):
@@ -25,10 +28,24 @@ def chunk(text: str, size: int = 110, overlap: int = 25):
 class Retriever:
     def __init__(self, corpus_dir: Path = C.CORPUS_DIR, backend: str = C.RAG_BACKEND):
         self.chunks = []
+        manifest = Path(corpus_dir) / "manifest.json"
+        docs = json.loads(manifest.read_text(encoding="utf-8")).get("documentos", []) if manifest.exists() else []
+        urls = {d["archivo"]: d["url"] for d in docs}
         for p in sorted(Path(corpus_dir).glob("*")):
-            if p.suffix.lower() in {".md", ".txt", ".pdf"} and p.name.upper() != "FUENTES.MD":
-                for i, c in enumerate(chunk(_read(p))):
-                    self.chunks.append({"fuente": p.name, "id": f"{p.name}#{i}", "texto": c})
+            if p.suffix.lower() not in {".md", ".txt", ".pdf"} or p.name.lower() in {"fuentes.md", "urls.txt"}:
+                continue
+            if p.suffix.lower() == ".pdf":
+                from pypdf import PdfReader
+                pages = [(i + 1, page.extract_text() or "") for i, page in enumerate(PdfReader(p).pages)]
+            else:
+                pages = [(None, _read(p))]
+            for page_no, text in pages:
+                for i, c in enumerate(chunk(text)):
+                    if not c.strip():
+                        continue
+                    ident = f"{p.name}:p{page_no}#{i}" if page_no else f"{p.name}#{i}"
+                    self.chunks.append({"fuente": p.name, "id": ident, "texto": c,
+                                        "pagina": page_no, "url": urls.get(p.name)})
         if not self.chunks:
             raise RuntimeError(f"Corpus vacío en {corpus_dir}")
         self.backend = backend
@@ -49,6 +66,7 @@ class Retriever:
             self.mat = self.vec.fit_transform(texts)
 
     def search(self, query: str, k: int = 4, min_score: float = 0.05):
+        k = max(1, min(int(k), len(self.chunks)))
         if self.backend == "st":
             q = self.enc.encode([query], normalize_embeddings=True).astype("float32")
             if self.index is not None:
@@ -61,7 +79,7 @@ class Retriever:
         else:
             sc = (self.mat @ self.vec.transform([query]).T).toarray().ravel()
             pairs = [(i, sc[i]) for i in np.argsort(-sc)[:k]]
-        return [{**self.chunks[i], "score": round(float(s), 3)} for i, s in pairs if s >= min_score]
+        return [{**self.chunks[i], "score": round(float(s), 3)} for i, s in pairs if i >= 0 and s >= min_score]
 
 
 _cache = {}

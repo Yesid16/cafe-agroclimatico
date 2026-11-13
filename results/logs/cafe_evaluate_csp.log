@@ -1,0 +1,10 @@
+Escenarios controlados; jornales y categorías son supuestos del equipo.
+
+| Escenario | MRV/FC | Factible | Nodos |
+|---|---|---|---|
+| mixto | False | True | 4 |
+| mixto | True | True | 4 |
+| solo_alta | False | False | 0 |
+| solo_alta | True | False | 0 |
+| capacidad_baja | False | False | 0 |
+| capacidad_baja | True | False | 0 |

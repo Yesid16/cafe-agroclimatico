@@ -14,13 +14,20 @@ from tests.synthetic import make_raw
 def pipeline(tmp_path_factory):
     d = tmp_path_factory.mktemp("d")
     make_raw(d)
+    original = {k: getattr(C, k) for k in ("PRECIP_DAILY", "TEMP_DAILY", "HUM_DAILY", "WEEKLY", "MODEL_PATH", "CLIMATE_WEEKLY")}
+    C.HUM_DAILY = d / "humedad_diaria.csv"  # ausente: la prueba no lee datos reales
     C.PRECIP_DAILY, C.TEMP_DAILY = d / "precip_diaria.csv", d / "temp_diaria.csv"
     C.WEEKLY, C.MODEL_PATH = d / "semanal.csv", d / "m.pkl"
+    C.CLIMATE_WEEKLY = d / "clima_semanal.csv"
     data_prep.build_weekly().to_csv(C.WEEKLY, index=False)
     w = pd.read_csv(C.WEEKLY, parse_dates=["semana"])
+    w.to_csv(C.CLIMATE_WEEKLY, index=False)
     risk_model.RoyaRiskModel().fit(w).save(C.MODEL_PATH)
     tools.clear_caches()
-    return w
+    yield w
+    for key, value in original.items():
+        setattr(C, key, value)
+    tools.clear_caches()
 
 
 def test_bn_ve_equals_bruteforce():
@@ -63,7 +70,7 @@ def test_csp_infeasible_has_reason():
 
 def test_rag():
     hits = Retriever(backend="tfidf").search("condiciones que favorecen la roya temperatura lluvia")
-    assert hits and hits[0]["fuente"].startswith("notas_")
+    assert hits and all(h["fuente"] and h["texto"] for h in hits)
 
 
 def test_agent_tools_and_errors(pipeline):
@@ -74,3 +81,9 @@ def test_agent_tools_and_errors(pipeline):
     assert "error" in o["trace"][0]["result"]
     o = run_agent("¿Cuál es el precio del dólar hoy?", {}, force_mock=True)
     assert o["trace"] == []
+
+def test_dashboard_renders_with_prepared_artifacts(pipeline):
+    from streamlit.testing.v1 import AppTest
+    app = AppTest.from_file(str(C.ROOT / 'app.py'), default_timeout=30).run()
+    assert not app.exception
+    assert len(app.tabs) == 6

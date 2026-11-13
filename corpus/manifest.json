@@ -1,0 +1,26 @@
+{
+  "documentos": [
+    {
+      "archivo": "avt0498.pdf",
+      "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132",
+      "paginas": 8,
+      "palabras": 3807,
+      "sha256": "1f0a5cba49507d3c12d9cd2eddfc00a62b4e8d513e869580a7818a97e0e3da52"
+    },
+    {
+      "archivo": "avt0391.pdf",
+      "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/1638/1776",
+      "paginas": 8,
+      "palabras": 3479,
+      "sha256": "53fa9415e51cfb747e6d5434cc9f8e946549bdb82928b7c7ff8fbbc618c72e6e"
+    },
+    {
+      "archivo": "avt0545.pdf",
+      "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/272/331",
+      "paginas": 8,
+      "palabras": 2252,
+      "sha256": "3e814e66cd13809a8547d541deb3cfbdfb30c327c396c33834eec4c7249e65cf"
+    }
+  ],
+  "errores": []
+}

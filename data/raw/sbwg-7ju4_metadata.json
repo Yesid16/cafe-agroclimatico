@@ -1,0 +1,1148 @@
+{
+  "id": "sbwg-7ju4",
+  "name": "Temperatura Ambiente del Aire",
+  "assetType": "dataset",
+  "attribution": "Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, Bogotá D.C.",
+  "attributionLink": "http://www.ideam.gov.co",
+  "averageRating": 0,
+  "category": "Ambiente y Desarrollo Sostenible",
+  "createdAt": 1562085731,
+  "description": "Anteriormente este set de datos se denominaba: \"Datos Hidrometeorológicos Crudos - Red de Estaciones IDEAM\" el cual se actualiza por \"Temperatura Ambiente del Aire\".\nContiene datos de la temperatura ambiente del aire registrada cada hora en diferentes estaciones meteorológicas ubicadas en el territorio colombiano. Los cuales han sido verificados mediante un control de calidad básico, de acuerdo con las recomendaciones de la Organización Meteorológica Mundial (OMM). \nPor lo anterior, se han corregido o eliminado valores que no han cumplido con estos controles y podrían requerir validaciones adicionales según el uso específico. \nEste conjunto de datos lo podemos utilizar para establecer el comportamiento diario, mensual y anual de la temperatura máxima del aire, en análisis climatológico y modelos climáticos, así como, en alertas tempranas.\nSe recomienda a los usuarios aplicar criterios adicionales de verificación para usos sensibles o técnicos especializados.\nLos datos disponibles a través de este medio pueden ser libremente consumidos bajo los siguientes clausulas: 1. Los datos a visualizar o descargar a continuación no han sido validados por el IDEAM. 2. Los datos aquí dispuestos son datos crudos instantáneos provenientes de los sensores de las estaciones automáticas de la red propia y/o producto de convenios interadministrativos con terceras entidades. 3. Los datos son puestos a disposición de la ciudadanía como mecanismo de transparencia y para proveer una herramienta de apoyo a la gestión del riesgo territorial y como datos abiertos en cumplimiento de la Ley 1712 de 2014. 4. Es posible que los datos aquí dispuestos tengan cierto retraso en el tiempo debido a las frecuencias de envío de datos de los sensores y los medios de transmisión utilizados. 5. Los datos presenten errores y/o inconsistencias estando incluso por fuera de los límites considerados normales, producto de fallas en los sensores de origen. 6. El posterior uso e interpretación que se le dé para cualquier finalidad queda bajo la exclusiva responsabilidad del portador de los datos. 7. Cualquier destino que se le dé a los datos exime al IDEAM de realizarles cualquier tipo de justificación o iniciarles proceso alguno de validación posterior, cuya fuente primaria deben ser los canales oficialmente dispuestos por la Entidad para el suministro de información oficial y validada. 8. Por las razones expuestas anteriormente los datos dispuestos no podrán ser utilizados como evidencia jurídica ante entes de control acerca de la ocurrencia o no de fenómenos hidro climatológicos o de soporte a cualquier tipo de situación o evento ocurrido como consecuencia de estos.",
+  "diciBackend": false,
+  "displayType": "table",
+  "downloadCount": 15561,
+  "hideFromCatalog": false,
+  "hideFromDataJson": false,
+  "indexUpdatedAt": 1572985252,
+  "licenseId": "CC_40_BY_SA",
+  "locked": false,
+  "newBackend": true,
+  "numberOfComments": 0,
+  "oid": 31852832,
+  "provenance": "official",
+  "publicationAppendEnabled": false,
+  "publicationDate": 1562096451,
+  "publicationGroup": 16329135,
+  "publicationStage": "published",
+  "rowsUpdatedAt": 1794495312,
+  "rowsUpdatedBy": "xac7-ivuv",
+  "tableId": 16329510,
+  "totalTimesRated": 0,
+  "viewCount": 66005,
+  "viewLastModified": 1779130973,
+  "viewType": "tabular",
+  "approvals": [
+    {
+      "reviewedAt": 1748987747,
+      "reviewedAutomatically": false,
+      "state": "approved",
+      "submissionId": 6905320,
+      "submissionObject": "public_audience_request",
+      "submissionOutcome": "change_audience",
+      "submittedAt": 1748987720,
+      "targetAudience": "public",
+      "workflowId": 2188,
+      "reviewer": {
+        "id": "r4qn-dwdd",
+        "displayName": "Ministerio de Tecnologías de la Información y las Comunicaciones - Datos Abiertos"
+      },
+      "submissionDetails": {
+        "permissionType": "read"
+      },
+      "submissionOutcomeApplication": {
+        "endedAt": 1748987747,
+        "failureCount": 0,
+        "startedAt": 1748987747,
+        "status": "success"
+      },
+      "submitter": {
+        "id": "r4qn-dwdd",
+        "displayName": "Ministerio de Tecnologías de la Información y las Comunicaciones - Datos Abiertos"
+      }
+    }
+  ],
+  "clientContext": {
+    "clientContextVariables": [],
+    "inheritedVariables": {}
+  },
+  "columns": [
+    {
+      "id": 415855932,
+      "name": "CodigoEstacion",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "codigoestacion",
+      "position": 1,
+      "renderTypeName": "text",
+      "tableColumnId": 83554630,
+      "cachedContents": {
+        "largest": "5311500149",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "0016015501",
+            "count": "928281"
+          },
+          {
+            "item": "0013035501",
+            "count": "905814"
+          },
+          {
+            "item": "0029045190",
+            "count": "902660"
+          },
+          {
+            "item": "0028025502",
+            "count": "893478"
+          },
+          {
+            "item": "0015065180",
+            "count": "889758"
+          },
+          {
+            "item": "0023195502",
+            "count": "882902"
+          },
+          {
+            "item": "0024035340",
+            "count": "879078"
+          },
+          {
+            "item": "0026125061",
+            "count": "875565"
+          },
+          {
+            "item": "0052055230",
+            "count": "874865"
+          },
+          {
+            "item": "3502500135",
+            "count": "815330"
+          },
+          {
+            "item": "0017015010",
+            "count": "773763"
+          },
+          {
+            "item": "0048015050",
+            "count": "770106"
+          },
+          {
+            "item": "0014015080",
+            "count": "762518"
+          },
+          {
+            "item": "0023085270",
+            "count": "762263"
+          },
+          {
+            "item": "0027015330",
+            "count": "753535"
+          },
+          {
+            "item": "0026125710",
+            "count": "699967"
+          },
+          {
+            "item": "2120000105",
+            "count": "693954"
+          },
+          {
+            "item": "2120000107",
+            "count": "689488"
+          },
+          {
+            "item": "2120000106",
+            "count": "682731"
+          },
+          {
+            "item": "2120000102",
+            "count": "681848"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "0011025501",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855933,
+      "name": "CodigoSensor",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "codigosensor",
+      "position": 2,
+      "renderTypeName": "text",
+      "tableColumnId": 83554631,
+      "cachedContents": {
+        "largest": "0071",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "0068",
+            "count": "79512221"
+          },
+          {
+            "item": "0071",
+            "count": "14144395"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "0068",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855934,
+      "name": "FechaObservacion",
+      "dataTypeName": "calendar_date",
+      "description": "",
+      "fieldName": "fechaobservacion",
+      "position": 3,
+      "renderTypeName": "calendar_date",
+      "tableColumnId": 83554632,
+      "cachedContents": {
+        "largest": "2026-10-25T23:58:00.000",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "2026-07-24T01:00:00.000",
+            "count": "5529"
+          },
+          {
+            "item": "2026-07-24T02:00:00.000",
+            "count": "5529"
+          },
+          {
+            "item": "2026-07-24T14:00:00.000",
+            "count": "5529"
+          },
+          {
+            "item": "2026-07-24T00:00:00.000",
+            "count": "5529"
+          },
+          {
+            "item": "2026-07-24T15:00:00.000",
+            "count": "5510"
+          },
+          {
+            "item": "2026-07-24T16:00:00.000",
+            "count": "5491"
+          },
+          {
+            "item": "2026-07-24T13:00:00.000",
+            "count": "5472"
+          },
+          {
+            "item": "2026-07-24T18:00:00.000",
+            "count": "5472"
+          },
+          {
+            "item": "2026-07-24T03:00:00.000",
+            "count": "5472"
+          },
+          {
+            "item": "2026-07-24T17:00:00.000",
+            "count": "5472"
+          },
+          {
+            "item": "2026-07-24T21:00:00.000",
+            "count": "5453"
+          },
+          {
+            "item": "2026-07-24T19:00:00.000",
+            "count": "5453"
+          },
+          {
+            "item": "2026-07-24T06:00:00.000",
+            "count": "5453"
+          },
+          {
+            "item": "2026-07-24T09:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T12:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T10:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T22:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T08:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T04:00:00.000",
+            "count": "5434"
+          },
+          {
+            "item": "2026-07-24T23:00:00.000",
+            "count": "5415"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "2001-01-01T00:19:05.000",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855935,
+      "name": "ValorObservado",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "valorobservado",
+      "position": 4,
+      "renderTypeName": "number",
+      "tableColumnId": 83554633,
+      "cachedContents": {
+        "largest": "50",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "0",
+            "count": "475343"
+          },
+          {
+            "item": "19.4",
+            "count": "257444"
+          },
+          {
+            "item": "24.9",
+            "count": "257319"
+          },
+          {
+            "item": "24.6",
+            "count": "257179"
+          },
+          {
+            "item": "18.5",
+            "count": "256657"
+          },
+          {
+            "item": "18.9",
+            "count": "255481"
+          },
+          {
+            "item": "19",
+            "count": "254862"
+          },
+          {
+            "item": "25.1",
+            "count": "254726"
+          },
+          {
+            "item": "18.8",
+            "count": "254601"
+          },
+          {
+            "item": "24.8",
+            "count": "254583"
+          },
+          {
+            "item": "24.4",
+            "count": "253222"
+          },
+          {
+            "item": "24.7",
+            "count": "253025"
+          },
+          {
+            "item": "19.1",
+            "count": "252644"
+          },
+          {
+            "item": "19.3",
+            "count": "251693"
+          },
+          {
+            "item": "25.4",
+            "count": "251378"
+          },
+          {
+            "item": "18.6",
+            "count": "251290"
+          },
+          {
+            "item": "24.5",
+            "count": "250131"
+          },
+          {
+            "item": "25.3",
+            "count": "250128"
+          },
+          {
+            "item": "25",
+            "count": "250109"
+          },
+          {
+            "item": "19.5",
+            "count": "250048"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "0",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855936,
+      "name": "NombreEstacion",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "nombreestacion",
+      "position": 5,
+      "renderTypeName": "text",
+      "tableColumnId": 83554634,
+      "cachedContents": {
+        "largest": "ZULUAGA AUT [21065040]",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "ESPERANZA LA  - AUT",
+            "count": "988438"
+          },
+          {
+            "item": "AEROPUERTO A LLERAS C",
+            "count": "825193"
+          },
+          {
+            "item": "AEROPUERTO CAMILO DAZA",
+            "count": "811033"
+          },
+          {
+            "item": "AEROPUERTO ALFONSO LOPEZ -",
+            "count": "790980"
+          },
+          {
+            "item": "AEROPUERTO LOS GARZONES",
+            "count": "789675"
+          },
+          {
+            "item": "AEROPUERTO SAN LUIS",
+            "count": "788073"
+          },
+          {
+            "item": "GUAYABETAL POLLO OLIMPICO",
+            "count": "785828"
+          },
+          {
+            "item": "AEROPUERTO EL EDEN -",
+            "count": "783814"
+          },
+          {
+            "item": "AEROPUERTO E. CORTISSOZ",
+            "count": "777213"
+          },
+          {
+            "item": "AEROPUERTO ALM. PADILLA -",
+            "count": "765638"
+          },
+          {
+            "item": "AEROPUERTO PALONEGRO",
+            "count": "763696"
+          },
+          {
+            "item": "AEROPUERTO VASQUEZ COBO",
+            "count": "720321"
+          },
+          {
+            "item": "AEROPUERTO RAFAEL NUNEZ",
+            "count": "709605"
+          },
+          {
+            "item": "AEROPUERTO SESQUICENTENARIO",
+            "count": "708518"
+          },
+          {
+            "item": "EL CODITO - AUT",
+            "count": "693954"
+          },
+          {
+            "item": "LA FISCALA - AUT",
+            "count": "689488"
+          },
+          {
+            "item": "GRAN BRETAÑA - AUT",
+            "count": "682731"
+          },
+          {
+            "item": "COLEGIO CARLOS PIZARRO - AUT",
+            "count": "681848"
+          },
+          {
+            "item": "SAN FRANCISCO - AUT",
+            "count": "680766"
+          },
+          {
+            "item": "CASAS FISCALES ESCUELA DE ARTILLERÍA - AUT",
+            "count": "680465"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "ABRIAQUI",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855937,
+      "name": "Departamento",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "departamento",
+      "position": 6,
+      "renderTypeName": "text",
+      "tableColumnId": 83554635,
+      "cachedContents": {
+        "largest": "VICHADA",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "BOGOTA D.C.",
+            "count": "10098643"
+          },
+          {
+            "item": "CUNDINAMARCA",
+            "count": "9433349"
+          },
+          {
+            "item": "CALDAS",
+            "count": "7961817"
+          },
+          {
+            "item": "ANTIOQUIA",
+            "count": "6922062"
+          },
+          {
+            "item": "VALLE DEL CAUCA",
+            "count": "6068771"
+          },
+          {
+            "item": "TOLIMA",
+            "count": "4963091"
+          },
+          {
+            "item": "BOYACÁ",
+            "count": "4659304"
+          },
+          {
+            "item": "HUILA",
+            "count": "4410048"
+          },
+          {
+            "item": "RISARALDA",
+            "count": "4307343"
+          },
+          {
+            "item": "NORTE DE SANTANDER",
+            "count": "3917267"
+          },
+          {
+            "item": "SANTANDER",
+            "count": "3684611"
+          },
+          {
+            "item": "QUINDÍO",
+            "count": "3526739"
+          },
+          {
+            "item": "NARIÑO",
+            "count": "3158415"
+          },
+          {
+            "item": "CAUCA",
+            "count": "2342632"
+          },
+          {
+            "item": "CESAR",
+            "count": "1870951"
+          },
+          {
+            "item": "LA GUAJIRA",
+            "count": "1427096"
+          },
+          {
+            "item": "MAGDALENA",
+            "count": "1285971"
+          },
+          {
+            "item": "ATLANTICO",
+            "count": "1041428"
+          },
+          {
+            "item": "BOLIVAR",
+            "count": "1034126"
+          },
+          {
+            "item": "CORDOBA",
+            "count": "975324"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "Amazonas",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855938,
+      "name": "Municipio",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "municipio",
+      "position": 7,
+      "renderTypeName": "text",
+      "tableColumnId": 83554636,
+      "cachedContents": {
+        "largest": "ZONA BANANERA",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "BOGOTA, D.C",
+            "count": "11065183"
+          },
+          {
+            "item": "PEREIRA",
+            "count": "1966528"
+          },
+          {
+            "item": "MANIZALES",
+            "count": "1710398"
+          },
+          {
+            "item": "BELALCAZAR",
+            "count": "1393305"
+          },
+          {
+            "item": "VALLEDUPAR",
+            "count": "1071847"
+          },
+          {
+            "item": "CÚCUTA",
+            "count": "1040677"
+          },
+          {
+            "item": "MONTERÍA",
+            "count": "1003651"
+          },
+          {
+            "item": "SOGAMOSO",
+            "count": "969052"
+          },
+          {
+            "item": "ARMENIA",
+            "count": "929831"
+          },
+          {
+            "item": "RIOHACHA",
+            "count": "915749"
+          },
+          {
+            "item": "MEDELLÍN",
+            "count": "868175"
+          },
+          {
+            "item": "LEBRIJA",
+            "count": "857147"
+          },
+          {
+            "item": "SOLEDAD",
+            "count": "848739"
+          },
+          {
+            "item": "SAN ANDRÉS",
+            "count": "845280"
+          },
+          {
+            "item": "ALDANA",
+            "count": "821659"
+          },
+          {
+            "item": "GUAYABETAL",
+            "count": "814670"
+          },
+          {
+            "item": "RIONEGRO",
+            "count": "805237"
+          },
+          {
+            "item": "CARTAGENA DE INDIAS",
+            "count": "798257"
+          },
+          {
+            "item": "IBAGUÉ",
+            "count": "769622"
+          },
+          {
+            "item": "LETICIA",
+            "count": "754861"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "ÁBREGO",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855939,
+      "name": "ZonaHidrografica",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "zonahidrografica",
+      "position": 8,
+      "renderTypeName": "text",
+      "tableColumnId": 83554637,
+      "cachedContents": {
+        "largest": "VICHADA",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "ALTO MAGDALENA",
+            "count": "24285102"
+          },
+          {
+            "item": "CAUCA",
+            "count": "22399235"
+          },
+          {
+            "item": "MEDIO MAGDALENA",
+            "count": "7890267"
+          },
+          {
+            "item": "SOGAMOSO",
+            "count": "5350384"
+          },
+          {
+            "item": "META",
+            "count": "4543205"
+          },
+          {
+            "item": "PATÍA",
+            "count": "4003440"
+          },
+          {
+            "item": "CATATUMBO",
+            "count": "3611516"
+          },
+          {
+            "item": "BAJO MAGDALENA",
+            "count": "2252608"
+          },
+          {
+            "item": "CESAR",
+            "count": "1914864"
+          },
+          {
+            "item": "CARIBE - GUAJIRA",
+            "count": "1841787"
+          },
+          {
+            "item": "NECHÍ",
+            "count": "1554721"
+          },
+          {
+            "item": "SALDAÑA",
+            "count": "1366061"
+          },
+          {
+            "item": "TAPAJE - DAGUA - DIRECTOS",
+            "count": "1281978"
+          },
+          {
+            "item": "ATRATO - DARIÉN",
+            "count": "1279031"
+          },
+          {
+            "item": "SINÚ",
+            "count": "1150526"
+          },
+          {
+            "item": "CARIBE - LITORAL",
+            "count": "1122173"
+          },
+          {
+            "item": "ISLAS CARIBE",
+            "count": "1033045"
+          },
+          {
+            "item": "SAN JUÁN",
+            "count": "873212"
+          },
+          {
+            "item": "AMAZONAS - DIRECTOS",
+            "count": "813722"
+          },
+          {
+            "item": "CAQUETÁ",
+            "count": "753197"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "Alto Magdalena",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855940,
+      "name": "Latitud",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "latitud",
+      "position": 9,
+      "renderTypeName": "number",
+      "tableColumnId": 83554638,
+      "cachedContents": {
+        "largest": "15.797",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "4.567",
+            "count": "920552"
+          },
+          {
+            "item": "7.93028",
+            "count": "864111"
+          },
+          {
+            "item": "4.633",
+            "count": "855630"
+          },
+          {
+            "item": "10.43616667",
+            "count": "842507"
+          },
+          {
+            "item": "10.91777778",
+            "count": "831134"
+          },
+          {
+            "item": "4.22553",
+            "count": "786488"
+          },
+          {
+            "item": "11.5284444",
+            "count": "767124"
+          },
+          {
+            "item": "10.44725",
+            "count": "762518"
+          },
+          {
+            "item": "4.813",
+            "count": "719084"
+          },
+          {
+            "item": "4.617",
+            "count": "714909"
+          },
+          {
+            "item": "12.587849",
+            "count": "710020"
+          },
+          {
+            "item": "4.763",
+            "count": "693954"
+          },
+          {
+            "item": "6.1686111",
+            "count": "691882"
+          },
+          {
+            "item": "4.536",
+            "count": "689488"
+          },
+          {
+            "item": "8.825833333",
+            "count": "684938"
+          },
+          {
+            "item": "4.512",
+            "count": "682731"
+          },
+          {
+            "item": "5.676944444",
+            "count": "682284"
+          },
+          {
+            "item": "4.635",
+            "count": "681848"
+          },
+          {
+            "item": "4.562",
+            "count": "680766"
+          },
+          {
+            "item": "4.556",
+            "count": "680465"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "-4.199509",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855941,
+      "name": "Longitud",
+      "dataTypeName": "number",
+      "description": "",
+      "fieldName": "longitud",
+      "position": 10,
+      "renderTypeName": "number",
+      "tableColumnId": 83554639,
+      "cachedContents": {
+        "largest": "0",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "-74.05",
+            "count": "1452331"
+          },
+          {
+            "item": "-75.63305556",
+            "count": "1079300"
+          },
+          {
+            "item": "-72.50917",
+            "count": "864111"
+          },
+          {
+            "item": "-72.96791667",
+            "count": "859317"
+          },
+          {
+            "item": "-73.24766667",
+            "count": "842507"
+          },
+          {
+            "item": "-77.67775",
+            "count": "841279"
+          },
+          {
+            "item": "-75.76638889",
+            "count": "837751"
+          },
+          {
+            "item": "-74.77972222",
+            "count": "831134"
+          },
+          {
+            "item": "-75.82513889",
+            "count": "818281"
+          },
+          {
+            "item": "-73.18452778",
+            "count": "817212"
+          },
+          {
+            "item": "-73.81481",
+            "count": "786488"
+          },
+          {
+            "item": "-75.51602778",
+            "count": "762518"
+          },
+          {
+            "item": "-81.701117",
+            "count": "710020"
+          },
+          {
+            "item": "-74.022",
+            "count": "693954"
+          },
+          {
+            "item": "-74.106",
+            "count": "689488"
+          },
+          {
+            "item": "-74.164",
+            "count": "682731"
+          },
+          {
+            "item": "-74.205",
+            "count": "681848"
+          },
+          {
+            "item": "-74.149",
+            "count": "680766"
+          },
+          {
+            "item": "-74.125",
+            "count": "680465"
+          },
+          {
+            "item": "-74.031",
+            "count": "668753"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "-81.731",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855942,
+      "name": "DescripcionSensor",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "descripcionsensor",
+      "position": 11,
+      "renderTypeName": "text",
+      "tableColumnId": 83554640,
+      "cachedContents": {
+        "largest": "TEMPERATURA DEL AIRE A 2 m",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "Temp Aire 2 m",
+            "count": "72825413"
+          },
+          {
+            "item": "GPRS - TEMPERATURA DEL AIRE A 2 m",
+            "count": "14144395"
+          },
+          {
+            "item": "TEMPERATURA DEL AIRE A 2 m",
+            "count": "6686808"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "GPRS - TEMPERATURA DEL AIRE A 2 m",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    },
+    {
+      "id": 415855943,
+      "name": "UnidadMedida",
+      "dataTypeName": "text",
+      "description": "",
+      "fieldName": "unidadmedida",
+      "position": 12,
+      "renderTypeName": "text",
+      "tableColumnId": 83554641,
+      "cachedContents": {
+        "largest": "°C",
+        "non_null": "93656616",
+        "null": "0",
+        "top": [
+          {
+            "item": "°C",
+            "count": "93676991"
+          }
+        ],
+        "not_null": "47059503",
+        "smallest": "°C",
+        "count": "93656616",
+        "cardinality": "93656616"
+      },
+      "format": {}
+    }
+  ],
+  "grants": [
+    {
+      "inherited": false,
+      "type": "viewer",
+      "flags": [
+        "public"
+      ]
+    }
+  ],
+  "license": {
+    "name": "Creative Commons Attribution | Share Alike 4.0 International",
+    "logoUrl": "images/licenses/cc30bysa.png",
+    "termsLink": "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "metadata": {
+    "custom_fields": {
+      "Información de la Entidad": {
+        "Municipio": "Bogotá D.C.",
+        "Nombre de la Entidad": "Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, Bogotá D.C.",
+        "DIVIPOLA Municipio": "11001",
+        "Orden": "Nacional",
+        "Sector": "Ambiente y Desarrollo Sostenible",
+        "Departamento": "Bogotá D.C."
+      },
+      "Información de Datos": {
+        "Cobertura Geográfica": "Nacional",
+        "Idioma": "Español",
+        "Frecuencia de Actualización": "Diaria"
+      }
+    }
+  },
+  "owner": {
+    "id": "xac7-ivuv",
+    "displayName": "Oficina de Informática IDEAM",
+    "profileImageUrlLarge": "/api/users/xac7-ivuv/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/xac7-ivuv/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/xac7-ivuv/profile_images/TINY",
+    "screenName": "Oficina de Informática IDEAM",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "query": {},
+  "rights": [
+    "read"
+  ],
+  "tableAuthor": {
+    "id": "xac7-ivuv",
+    "displayName": "Oficina de Informática IDEAM",
+    "profileImageUrlLarge": "/api/users/xac7-ivuv/profile_images/LARGE",
+    "profileImageUrlMedium": "/api/users/xac7-ivuv/profile_images/THUMB",
+    "profileImageUrlSmall": "/api/users/xac7-ivuv/profile_images/TINY",
+    "screenName": "Oficina de Informática IDEAM",
+    "type": "interactive",
+    "flags": [
+      "acceptedEula",
+      "mayBeStoriesCoOwner"
+    ]
+  },
+  "tags": [
+    "datos"
+  ],
+  "flags": [
+    "default",
+    "ownerMayBeContacted",
+    "restorable",
+    "restorePossibleForType"
+  ]
+}

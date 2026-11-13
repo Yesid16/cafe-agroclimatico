@@ -1,0 +1,79 @@
+{
+  "cutoff": "2026-02-22",
+  "n_train": 2689,
+  "n_test": 976,
+  "parametros_red": 919,
+  "distribucion_test": {
+    "Bajo": 353,
+    "Alto": 329,
+    "Medio": 294
+  },
+  "resultados": [
+    {
+      "modelo": "Mayoritaria (línea base 1)",
+      "accuracy": 0.3371,
+      "f1_macro": 0.1681,
+      "brier": 0.6673,
+      "log_loss": 1.0995
+    },
+    {
+      "modelo": "Persistencia Riesgo_t (línea base 2)",
+      "accuracy": 0.7797,
+      "f1_macro": 0.7742,
+      "brier": 0.3895,
+      "log_loss": 0.7421
+    },
+    {
+      "modelo": "Regresión logística (referencia sklearn)",
+      "accuracy": 0.7982,
+      "f1_macro": 0.7914,
+      "brier": 0.317,
+      "log_loss": 0.5437
+    },
+    {
+      "modelo": "Red bayesiana propia (VE)",
+      "accuracy": 0.7428,
+      "f1_macro": 0.7407,
+      "brier": 0.374,
+      "log_loss": 0.6577
+    }
+  ],
+  "clases": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "confusion_bn": [
+    [
+      271,
+      79,
+      3
+    ],
+    [
+      45,
+      197,
+      52
+    ],
+    [
+      18,
+      54,
+      257
+    ]
+  ],
+  "terciles_train_mm": [
+    15.399999999999999,
+    49.81666666666667
+  ],
+  "periodo_test_evidencia": [
+    "2026-03-01",
+    "2026-10-25"
+  ],
+  "objetivo": "Favorabilidad climática heurística en t+1; no incidencia real de roya",
+  "features_referencia": [
+    "Trim",
+    "Lluvia_prev",
+    "Lluvia",
+    "Temp",
+    "Humedad"
+  ]
+}

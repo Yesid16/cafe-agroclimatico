@@ -1,0 +1,78 @@
+{
+  "estado": "Dos experimentos de Colab presentes y coherentes; no se entrena en esta comparación",
+  "cutoff": "2026-02-22",
+  "n_train_original": 2693,
+  "n_train_conservador": 2689,
+  "n_test_comunes": 976,
+  "etiquetas_test_modificadas": 2,
+  "decision_demo": "Mantener original como referencia reproducible con advertencias; conservar sensibilidad separada. Los filtros no son validación certificada.",
+  "limitacion_comparacion": "Mismas claves de test, pero cambian dos etiquetas y evidencias; no es comparación estricta sobre un objetivo fijo ni prueba de significancia.",
+  "metricas": [
+    {
+      "modelo": "Mayoritaria (línea base 1)",
+      "accuracy_original": 0.3391,
+      "f1_macro_original": 0.1688,
+      "brier_original": 0.6673,
+      "log_loss_original": 1.0996,
+      "accuracy_conservador": 0.3371,
+      "f1_macro_conservador": 0.1681,
+      "brier_conservador": 0.6673,
+      "log_loss_conservador": 1.0995,
+      "delta_accuracy": -0.002,
+      "delta_f1_macro": -0.0007,
+      "delta_brier": 0.0,
+      "delta_log_loss": -0.0001
+    },
+    {
+      "modelo": "Persistencia Riesgo_t (línea base 2)",
+      "accuracy_original": 0.7777,
+      "f1_macro_original": 0.7716,
+      "brier_original": 0.393,
+      "log_loss_original": 0.748,
+      "accuracy_conservador": 0.7797,
+      "f1_macro_conservador": 0.7742,
+      "brier_conservador": 0.3895,
+      "log_loss_conservador": 0.7421,
+      "delta_accuracy": 0.002,
+      "delta_f1_macro": 0.0026,
+      "delta_brier": -0.0035,
+      "delta_log_loss": -0.0059
+    },
+    {
+      "modelo": "Regresión logística (referencia sklearn)",
+      "accuracy_original": 0.8002,
+      "f1_macro_original": 0.7935,
+      "brier_original": 0.3163,
+      "log_loss_original": 0.5425,
+      "accuracy_conservador": 0.7982,
+      "f1_macro_conservador": 0.7914,
+      "brier_conservador": 0.317,
+      "log_loss_conservador": 0.5437,
+      "delta_accuracy": -0.002,
+      "delta_f1_macro": -0.0021,
+      "delta_brier": 0.0007,
+      "delta_log_loss": 0.0012
+    },
+    {
+      "modelo": "Red bayesiana propia (VE)",
+      "accuracy_original": 0.748,
+      "f1_macro_original": 0.7453,
+      "brier_original": 0.3693,
+      "log_loss_original": 0.6498,
+      "accuracy_conservador": 0.7428,
+      "f1_macro_conservador": 0.7407,
+      "brier_conservador": 0.374,
+      "log_loss_conservador": 0.6577,
+      "delta_accuracy": -0.0052,
+      "delta_f1_macro": -0.0046,
+      "delta_brier": 0.0047,
+      "delta_log_loss": 0.0079
+    }
+  ],
+  "sha256": {
+    "data/processed/semanal.csv": "88356cc7fa4336a66f74294cb6f812a2a1a77f3e5335f9aa0e94c1f7be32ee47",
+    "data/processed/modelo_roya.pkl": "49e635a676e221fbe87620534e68e804f0a79b65034e8fde497b09cb117a57fe",
+    "data/review/processed/semanal.csv": "a86e7c83a39b299b9078cd2c5dd52b3c9e6ea2aeeb63d4d335e69a603ca7bcae",
+    "data/review/processed/modelo_roya.pkl": "da4fb7981b8917a9374af0bd8797cf0930ae95240d2e259a003c7dc46e1cbed8"
+  }
+}

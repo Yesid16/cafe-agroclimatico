@@ -6,3 +6,18 @@ data/raw/*.csv
 data/processed/*
 !data/processed/.gitkeep
 !data/raw/.gitkeep
+
+.venv/
+data/raw/cache/
+artifacts/
+tmp/
+*.zip
+
+# Snapshot pequeño generado en Colab, necesario para ejecutar la demo sin reentrenar.
+!data/processed/semanal.csv
+!data/processed/modelo_roya.pkl
+
+# Insumos y candidatos reproducibles de la revisión diaria, no sustituyen la instantánea original.
+data/review/
+
+!data/processed/clima_semanal.csv

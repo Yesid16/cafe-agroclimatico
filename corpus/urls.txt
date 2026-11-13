@@ -1,0 +1,4 @@
+# nombre.pdf|URL directa oficial
+avt0498.pdf|https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132
+avt0391.pdf|https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/1638/1776
+avt0545.pdf|https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/272/331

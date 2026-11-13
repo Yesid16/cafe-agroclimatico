@@ -8,3 +8,5 @@ openai>=1.40
 pypdf>=4.0
 pytest>=8.0
 # Opcional (RAG con embeddings): sentence-transformers faiss-cpu
+
+fonttools>=4.50

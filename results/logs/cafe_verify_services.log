@@ -1,0 +1,1 @@
+{"ideam": [200, 200, 200], "nvidia": {"modelo": "nvidia/nemotron-3.5-lightning-30b-a3b", "tool_calling_ok": true, "tools": ["search_docs"], "tokens": 366}}

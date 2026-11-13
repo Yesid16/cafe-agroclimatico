@@ -1,0 +1,374 @@
+/usr/local/lib/python3.13/dist-packages/pandas/core/arrays/masked.py:63: UserWarning: Pandas requires version '1.5.0' or newer of 'bottleneck' (version '1.4.2' currently installed).
+  from pandas.core import (
+s54a-sgyg: consultando metadatos; rango 2022-01-01 a 2026-10-31
+s54a-sgyg: consultando 2022-01-01 a 2022-02-01 (fin exclusivo)
+s54a-sgyg 2022-01-01 a 2022-02-01: 1206 estación-día
+s54a-sgyg: consultando 2022-02-01 a 2022-03-01 (fin exclusivo)
+s54a-sgyg 2022-02-01 a 2022-03-01: 1400 estación-día
+s54a-sgyg: consultando 2022-03-01 a 2022-04-01 (fin exclusivo)
+s54a-sgyg 2022-03-01 a 2022-04-01: 145 estación-día
+s54a-sgyg: consultando 2022-04-01 a 2022-05-01 (fin exclusivo)
+s54a-sgyg 2022-04-01 a 2022-05-01: 1729 estación-día
+s54a-sgyg: consultando 2022-05-01 a 2022-06-01 (fin exclusivo)
+s54a-sgyg 2022-05-01 a 2022-06-01: 1734 estación-día
+s54a-sgyg: consultando 2022-06-01 a 2022-07-01 (fin exclusivo)
+s54a-sgyg 2022-06-01 a 2022-07-01: 1930 estación-día
+s54a-sgyg: consultando 2022-07-01 a 2022-08-01 (fin exclusivo)
+s54a-sgyg 2022-07-01 a 2022-08-01: 1759 estación-día
+s54a-sgyg: consultando 2022-08-01 a 2022-09-01 (fin exclusivo)
+s54a-sgyg 2022-08-01 a 2022-09-01: 1733 estación-día
+s54a-sgyg: consultando 2022-09-01 a 2022-10-01 (fin exclusivo)
+s54a-sgyg 2022-09-01 a 2022-10-01: 1633 estación-día
+s54a-sgyg: consultando 2022-10-01 a 2022-11-01 (fin exclusivo)
+s54a-sgyg 2022-10-01 a 2022-11-01: 1774 estación-día
+s54a-sgyg: consultando 2022-11-01 a 2022-12-01 (fin exclusivo)
+s54a-sgyg 2022-11-01 a 2022-12-01: 209 estación-día
+s54a-sgyg: consultando 2022-12-01 a 2023-01-01 (fin exclusivo)
+s54a-sgyg 2022-12-01 a 2023-01-01: 1301 estación-día
+s54a-sgyg: consultando 2023-01-01 a 2023-02-01 (fin exclusivo)
+s54a-sgyg 2023-01-01 a 2023-02-01: 1538 estación-día
+s54a-sgyg: consultando 2023-02-01 a 2023-03-01 (fin exclusivo)
+s54a-sgyg 2023-02-01 a 2023-03-01: 1607 estación-día
+s54a-sgyg: consultando 2023-03-01 a 2023-04-01 (fin exclusivo)
+s54a-sgyg 2023-03-01 a 2023-04-01: 1342 estación-día
+s54a-sgyg: consultando 2023-04-01 a 2023-05-01 (fin exclusivo)
+s54a-sgyg 2023-04-01 a 2023-05-01: 913 estación-día
+s54a-sgyg: consultando 2023-05-01 a 2023-06-01 (fin exclusivo)
+s54a-sgyg 2023-05-01 a 2023-06-01: 849 estación-día
+s54a-sgyg: consultando 2023-06-01 a 2023-07-01 (fin exclusivo)
+s54a-sgyg 2023-06-01 a 2023-07-01: 680 estación-día
+s54a-sgyg: consultando 2023-07-01 a 2023-08-01 (fin exclusivo)
+s54a-sgyg 2023-07-01 a 2023-08-01: 729 estación-día
+s54a-sgyg: consultando 2023-08-01 a 2023-09-01 (fin exclusivo)
+s54a-sgyg 2023-08-01 a 2023-09-01: 599 estación-día
+s54a-sgyg: consultando 2023-09-01 a 2023-10-01 (fin exclusivo)
+s54a-sgyg 2023-09-01 a 2023-10-01: 243 estación-día
+s54a-sgyg: consultando 2023-10-01 a 2023-11-01 (fin exclusivo)
+s54a-sgyg 2023-10-01 a 2023-11-01: 186 estación-día
+s54a-sgyg: consultando 2023-11-01 a 2023-12-01 (fin exclusivo)
+s54a-sgyg 2023-11-01 a 2023-12-01: 166 estación-día
+s54a-sgyg: consultando 2023-12-01 a 2024-01-01 (fin exclusivo)
+s54a-sgyg 2023-12-01 a 2024-01-01: 108 estación-día
+s54a-sgyg: consultando 2024-01-01 a 2024-02-01 (fin exclusivo)
+s54a-sgyg 2024-01-01 a 2024-02-01: 122 estación-día
+s54a-sgyg: consultando 2024-02-01 a 2024-03-01 (fin exclusivo)
+s54a-sgyg 2024-02-01 a 2024-03-01: 94 estación-día
+s54a-sgyg: consultando 2024-03-01 a 2024-04-01 (fin exclusivo)
+s54a-sgyg 2024-03-01 a 2024-04-01: 144 estación-día
+s54a-sgyg: consultando 2024-04-01 a 2024-05-01 (fin exclusivo)
+s54a-sgyg 2024-04-01 a 2024-05-01: 172 estación-día
+s54a-sgyg: consultando 2024-05-01 a 2024-06-01 (fin exclusivo)
+s54a-sgyg 2024-05-01 a 2024-06-01: 197 estación-día
+s54a-sgyg: consultando 2024-06-01 a 2024-07-01 (fin exclusivo)
+s54a-sgyg 2024-06-01 a 2024-07-01: 192 estación-día
+s54a-sgyg: consultando 2024-07-01 a 2024-08-01 (fin exclusivo)
+s54a-sgyg 2024-07-01 a 2024-08-01: 233 estación-día
+s54a-sgyg: consultando 2024-08-01 a 2024-09-01 (fin exclusivo)
+s54a-sgyg 2024-08-01 a 2024-09-01: 300 estación-día
+s54a-sgyg: consultando 2024-09-01 a 2024-10-01 (fin exclusivo)
+s54a-sgyg 2024-09-01 a 2024-10-01: 521 estación-día
+s54a-sgyg: consultando 2024-10-01 a 2024-11-01 (fin exclusivo)
+s54a-sgyg 2024-10-01 a 2024-11-01: 445 estación-día
+s54a-sgyg: consultando 2024-11-01 a 2024-12-01 (fin exclusivo)
+s54a-sgyg: intento 1/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: intento 2/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: el intervalo 2024-11-01 a 2024-12-01 agotó el tiempo; dividiendo en 2024-11-16.
+s54a-sgyg: consultando 2024-11-01 a 2024-11-16 (fin exclusivo)
+s54a-sgyg 2024-11-01 a 2024-11-16: 945 estación-día
+s54a-sgyg: consultando 2024-11-16 a 2024-12-01 (fin exclusivo)
+s54a-sgyg 2024-11-16 a 2024-12-01: 997 estación-día
+s54a-sgyg 2024-11-01 a 2024-12-01: 1942 estación-día
+s54a-sgyg: consultando 2024-12-01 a 2025-01-01 (fin exclusivo)
+s54a-sgyg: intento 1/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: intento 2/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: el intervalo 2024-12-01 a 2025-01-01 agotó el tiempo; dividiendo en 2024-12-16.
+s54a-sgyg: consultando 2024-12-01 a 2024-12-16 (fin exclusivo)
+s54a-sgyg 2024-12-01 a 2024-12-16: 1001 estación-día
+s54a-sgyg: consultando 2024-12-16 a 2025-01-01 (fin exclusivo)
+s54a-sgyg 2024-12-16 a 2025-01-01: 963 estación-día
+s54a-sgyg 2024-12-01 a 2025-01-01: 1964 estación-día
+s54a-sgyg: consultando 2025-01-01 a 2025-02-01 (fin exclusivo)
+s54a-sgyg: intento 1/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: intento 2/2: ReadTimeout: HTTPSConnectionPool(host='www.datos.gov.co', port=443): Read timed out. (read timeout=60)
+s54a-sgyg: el intervalo 2025-01-01 a 2025-02-01 agotó el tiempo; dividiendo en 2025-01-16.
+s54a-sgyg: consultando 2025-01-01 a 2025-01-16 (fin exclusivo)
+s54a-sgyg 2025-01-01 a 2025-01-16: 969 estación-día
+s54a-sgyg: consultando 2025-01-16 a 2025-02-01 (fin exclusivo)
+s54a-sgyg 2025-01-16 a 2025-02-01: 1043 estación-día
+s54a-sgyg 2025-01-01 a 2025-02-01: 2012 estación-día
+s54a-sgyg: consultando 2025-02-01 a 2025-03-01 (fin exclusivo)
+s54a-sgyg 2025-02-01 a 2025-03-01: 287 estación-día
+s54a-sgyg: consultando 2025-03-01 a 2025-04-01 (fin exclusivo)
+s54a-sgyg 2025-03-01 a 2025-04-01: 1562 estación-día
+s54a-sgyg: consultando 2025-04-01 a 2025-05-01 (fin exclusivo)
+s54a-sgyg 2025-04-01 a 2025-05-01: 1858 estación-día
+s54a-sgyg: consultando 2025-05-01 a 2025-06-01 (fin exclusivo)
+s54a-sgyg 2025-05-01 a 2025-06-01: 1747 estación-día
+s54a-sgyg: consultando 2025-06-01 a 2025-07-01 (fin exclusivo)
+s54a-sgyg 2025-06-01 a 2025-07-01: 2055 estación-día
+s54a-sgyg: consultando 2025-07-01 a 2025-08-01 (fin exclusivo)
+s54a-sgyg 2025-07-01 a 2025-08-01: 2181 estación-día
+s54a-sgyg: consultando 2025-08-01 a 2025-09-01 (fin exclusivo)
+s54a-sgyg 2025-08-01 a 2025-09-01: 2172 estación-día
+s54a-sgyg: consultando 2025-09-01 a 2025-10-01 (fin exclusivo)
+s54a-sgyg 2025-09-01 a 2025-10-01: 2204 estación-día
+s54a-sgyg: consultando 2025-10-01 a 2025-11-01 (fin exclusivo)
+s54a-sgyg 2025-10-01 a 2025-11-01: 2678 estación-día
+s54a-sgyg: consultando 2025-11-01 a 2025-12-01 (fin exclusivo)
+s54a-sgyg 2025-11-01 a 2025-12-01: 2752 estación-día
+s54a-sgyg: consultando 2025-12-01 a 2026-01-01 (fin exclusivo)
+s54a-sgyg 2025-12-01 a 2026-01-01: 2739 estación-día
+s54a-sgyg: consultando 2026-01-01 a 2026-02-01 (fin exclusivo)
+s54a-sgyg 2026-01-01 a 2026-02-01: 2678 estación-día
+s54a-sgyg: consultando 2026-02-01 a 2026-03-01 (fin exclusivo)
+s54a-sgyg 2026-02-01 a 2026-03-01: 2520 estación-día
+s54a-sgyg: consultando 2026-03-01 a 2026-04-01 (fin exclusivo)
+s54a-sgyg 2026-03-01 a 2026-04-01: 2894 estación-día
+s54a-sgyg: consultando 2026-04-01 a 2026-05-01 (fin exclusivo)
+s54a-sgyg 2026-04-01 a 2026-05-01: 2193 estación-día
+s54a-sgyg: consultando 2026-05-01 a 2026-06-01 (fin exclusivo)
+s54a-sgyg 2026-05-01 a 2026-06-01: 2134 estación-día
+s54a-sgyg: consultando 2026-06-01 a 2026-07-01 (fin exclusivo)
+s54a-sgyg 2026-06-01 a 2026-07-01: 2144 estación-día
+s54a-sgyg: consultando 2026-07-01 a 2026-08-01 (fin exclusivo)
+s54a-sgyg 2026-07-01 a 2026-08-01: 1509 estación-día
+s54a-sgyg: consultando 2026-08-01 a 2026-09-01 (fin exclusivo)
+s54a-sgyg 2026-08-01 a 2026-09-01: 1301 estación-día
+s54a-sgyg: consultando 2026-09-01 a 2026-10-01 (fin exclusivo)
+s54a-sgyg 2026-09-01 a 2026-10-01: 2324 estación-día
+s54a-sgyg: consultando 2026-10-01 a 2026-11-01 (fin exclusivo)
+s54a-sgyg 2026-10-01 a 2026-11-01: 2481 estación-día
+sbwg-7ju4: consultando metadatos; rango 2022-01-01 a 2026-10-31
+sbwg-7ju4: consultando 2022-01-01 a 2022-02-01 (fin exclusivo)
+sbwg-7ju4 2022-01-01 a 2022-02-01: 1076 estación-día
+sbwg-7ju4: consultando 2022-02-01 a 2022-03-01 (fin exclusivo)
+sbwg-7ju4 2022-02-01 a 2022-03-01: 1091 estación-día
+sbwg-7ju4: consultando 2022-03-01 a 2022-04-01 (fin exclusivo)
+sbwg-7ju4 2022-03-01 a 2022-04-01: 92 estación-día
+sbwg-7ju4: consultando 2022-04-01 a 2022-05-01 (fin exclusivo)
+sbwg-7ju4 2022-04-01 a 2022-05-01: 1407 estación-día
+sbwg-7ju4: consultando 2022-05-01 a 2022-06-01 (fin exclusivo)
+sbwg-7ju4 2022-05-01 a 2022-06-01: 1371 estación-día
+sbwg-7ju4: consultando 2022-06-01 a 2022-07-01 (fin exclusivo)
+sbwg-7ju4 2022-06-01 a 2022-07-01: 1512 estación-día
+sbwg-7ju4: consultando 2022-07-01 a 2022-08-01 (fin exclusivo)
+sbwg-7ju4 2022-07-01 a 2022-08-01: 1459 estación-día
+sbwg-7ju4: consultando 2022-08-01 a 2022-09-01 (fin exclusivo)
+sbwg-7ju4 2022-08-01 a 2022-09-01: 1372 estación-día
+sbwg-7ju4: consultando 2022-09-01 a 2022-10-01 (fin exclusivo)
+sbwg-7ju4 2022-09-01 a 2022-10-01: 1362 estación-día
+sbwg-7ju4: consultando 2022-10-01 a 2022-11-01 (fin exclusivo)
+sbwg-7ju4 2022-10-01 a 2022-11-01: 1454 estación-día
+sbwg-7ju4: consultando 2022-11-01 a 2022-12-01 (fin exclusivo)
+sbwg-7ju4 2022-11-01 a 2022-12-01: 227 estación-día
+sbwg-7ju4: consultando 2022-12-01 a 2023-01-01 (fin exclusivo)
+sbwg-7ju4 2022-12-01 a 2023-01-01: 1117 estación-día
+sbwg-7ju4: consultando 2023-01-01 a 2023-02-01 (fin exclusivo)
+sbwg-7ju4 2023-01-01 a 2023-02-01: 1407 estación-día
+sbwg-7ju4: consultando 2023-02-01 a 2023-03-01 (fin exclusivo)
+sbwg-7ju4 2023-02-01 a 2023-03-01: 1419 estación-día
+sbwg-7ju4: consultando 2023-03-01 a 2023-04-01 (fin exclusivo)
+sbwg-7ju4 2023-03-01 a 2023-04-01: 1234 estación-día
+sbwg-7ju4: consultando 2023-04-01 a 2023-05-01 (fin exclusivo)
+sbwg-7ju4 2023-04-01 a 2023-05-01: 818 estación-día
+sbwg-7ju4: consultando 2023-05-01 a 2023-06-01 (fin exclusivo)
+sbwg-7ju4 2023-05-01 a 2023-06-01: 768 estación-día
+sbwg-7ju4: consultando 2023-06-01 a 2023-07-01 (fin exclusivo)
+sbwg-7ju4 2023-06-01 a 2023-07-01: 584 estación-día
+sbwg-7ju4: consultando 2023-07-01 a 2023-08-01 (fin exclusivo)
+sbwg-7ju4 2023-07-01 a 2023-08-01: 622 estación-día
+sbwg-7ju4: consultando 2023-08-01 a 2023-09-01 (fin exclusivo)
+sbwg-7ju4 2023-08-01 a 2023-09-01: 510 estación-día
+sbwg-7ju4: consultando 2023-09-01 a 2023-10-01 (fin exclusivo)
+sbwg-7ju4 2023-09-01 a 2023-10-01: 175 estación-día
+sbwg-7ju4: consultando 2023-10-01 a 2023-11-01 (fin exclusivo)
+sbwg-7ju4 2023-10-01 a 2023-11-01: 96 estación-día
+sbwg-7ju4: consultando 2023-11-01 a 2023-12-01 (fin exclusivo)
+sbwg-7ju4 2023-11-01 a 2023-12-01: 79 estación-día
+sbwg-7ju4: consultando 2023-12-01 a 2024-01-01 (fin exclusivo)
+sbwg-7ju4 2023-12-01 a 2024-01-01: 44 estación-día
+sbwg-7ju4: consultando 2024-01-01 a 2024-02-01 (fin exclusivo)
+sbwg-7ju4 2024-01-01 a 2024-02-01: 51 estación-día
+sbwg-7ju4: consultando 2024-02-01 a 2024-03-01 (fin exclusivo)
+sbwg-7ju4 2024-02-01 a 2024-03-01: 32 estación-día
+sbwg-7ju4: consultando 2024-03-01 a 2024-04-01 (fin exclusivo)
+sbwg-7ju4 2024-03-01 a 2024-04-01: 65 estación-día
+sbwg-7ju4: consultando 2024-04-01 a 2024-05-01 (fin exclusivo)
+sbwg-7ju4 2024-04-01 a 2024-05-01: 78 estación-día
+sbwg-7ju4: consultando 2024-05-01 a 2024-06-01 (fin exclusivo)
+sbwg-7ju4 2024-05-01 a 2024-06-01: 72 estación-día
+sbwg-7ju4: consultando 2024-06-01 a 2024-07-01 (fin exclusivo)
+sbwg-7ju4 2024-06-01 a 2024-07-01: 69 estación-día
+sbwg-7ju4: consultando 2024-07-01 a 2024-08-01 (fin exclusivo)
+sbwg-7ju4 2024-07-01 a 2024-08-01: 100 estación-día
+sbwg-7ju4: consultando 2024-08-01 a 2024-09-01 (fin exclusivo)
+sbwg-7ju4 2024-08-01 a 2024-09-01: 145 estación-día
+sbwg-7ju4: consultando 2024-09-01 a 2024-10-01 (fin exclusivo)
+sbwg-7ju4 2024-09-01 a 2024-10-01: 314 estación-día
+sbwg-7ju4: consultando 2024-10-01 a 2024-11-01 (fin exclusivo)
+sbwg-7ju4 2024-10-01 a 2024-11-01: 260 estación-día
+sbwg-7ju4: consultando 2024-11-01 a 2024-12-01 (fin exclusivo)
+sbwg-7ju4 2024-11-01 a 2024-12-01: 1285 estación-día
+sbwg-7ju4: consultando 2024-12-01 a 2025-01-01 (fin exclusivo)
+sbwg-7ju4 2024-12-01 a 2025-01-01: 1285 estación-día
+sbwg-7ju4: consultando 2025-01-01 a 2025-02-01 (fin exclusivo)
+sbwg-7ju4 2025-01-01 a 2025-02-01: 1342 estación-día
+sbwg-7ju4: consultando 2025-02-01 a 2025-03-01 (fin exclusivo)
+sbwg-7ju4 2025-02-01 a 2025-03-01: 192 estación-día
+sbwg-7ju4: consultando 2025-03-01 a 2025-04-01 (fin exclusivo)
+sbwg-7ju4 2025-03-01 a 2025-04-01: 1045 estación-día
+sbwg-7ju4: consultando 2025-04-01 a 2025-05-01 (fin exclusivo)
+sbwg-7ju4 2025-04-01 a 2025-05-01: 1270 estación-día
+sbwg-7ju4: consultando 2025-05-01 a 2025-06-01 (fin exclusivo)
+sbwg-7ju4 2025-05-01 a 2025-06-01: 836 estación-día
+sbwg-7ju4: consultando 2025-06-01 a 2025-07-01 (fin exclusivo)
+sbwg-7ju4 2025-06-01 a 2025-07-01: 1339 estación-día
+sbwg-7ju4: consultando 2025-07-01 a 2025-08-01 (fin exclusivo)
+sbwg-7ju4 2025-07-01 a 2025-08-01: 1526 estación-día
+sbwg-7ju4: consultando 2025-08-01 a 2025-09-01 (fin exclusivo)
+sbwg-7ju4 2025-08-01 a 2025-09-01: 1479 estación-día
+sbwg-7ju4: consultando 2025-09-01 a 2025-10-01 (fin exclusivo)
+sbwg-7ju4 2025-09-01 a 2025-10-01: 1507 estación-día
+sbwg-7ju4: consultando 2025-10-01 a 2025-11-01 (fin exclusivo)
+sbwg-7ju4 2025-10-01 a 2025-11-01: 1741 estación-día
+sbwg-7ju4: consultando 2025-11-01 a 2025-12-01 (fin exclusivo)
+sbwg-7ju4 2025-11-01 a 2025-12-01: 1867 estación-día
+sbwg-7ju4: consultando 2025-12-01 a 2026-01-01 (fin exclusivo)
+sbwg-7ju4 2025-12-01 a 2026-01-01: 1831 estación-día
+sbwg-7ju4: consultando 2026-01-01 a 2026-02-01 (fin exclusivo)
+sbwg-7ju4 2026-01-01 a 2026-02-01: 1758 estación-día
+sbwg-7ju4: consultando 2026-02-01 a 2026-03-01 (fin exclusivo)
+sbwg-7ju4 2026-02-01 a 2026-03-01: 1691 estación-día
+sbwg-7ju4: consultando 2026-03-01 a 2026-04-01 (fin exclusivo)
+sbwg-7ju4 2026-03-01 a 2026-04-01: 1875 estación-día
+sbwg-7ju4: consultando 2026-04-01 a 2026-05-01 (fin exclusivo)
+sbwg-7ju4 2026-04-01 a 2026-05-01: 1343 estación-día
+sbwg-7ju4: consultando 2026-05-01 a 2026-06-01 (fin exclusivo)
+sbwg-7ju4 2026-05-01 a 2026-06-01: 1288 estación-día
+sbwg-7ju4: consultando 2026-06-01 a 2026-07-01 (fin exclusivo)
+sbwg-7ju4 2026-06-01 a 2026-07-01: 1383 estación-día
+sbwg-7ju4: consultando 2026-07-01 a 2026-08-01 (fin exclusivo)
+sbwg-7ju4 2026-07-01 a 2026-08-01: 986 estación-día
+sbwg-7ju4: consultando 2026-08-01 a 2026-09-01 (fin exclusivo)
+sbwg-7ju4 2026-08-01 a 2026-09-01: 845 estación-día
+sbwg-7ju4: consultando 2026-09-01 a 2026-10-01 (fin exclusivo)
+sbwg-7ju4 2026-09-01 a 2026-10-01: 1467 estación-día
+sbwg-7ju4: consultando 2026-10-01 a 2026-11-01 (fin exclusivo)
+sbwg-7ju4 2026-10-01 a 2026-11-01: 1561 estación-día
+uext-mhny: consultando metadatos; rango 2022-01-01 a 2026-10-31
+uext-mhny: consultando 2022-01-01 a 2022-02-01 (fin exclusivo)
+uext-mhny 2022-01-01 a 2022-02-01: 1034 estación-día
+uext-mhny: consultando 2022-02-01 a 2022-03-01 (fin exclusivo)
+uext-mhny 2022-02-01 a 2022-03-01: 1113 estación-día
+uext-mhny: consultando 2022-03-01 a 2022-04-01 (fin exclusivo)
+uext-mhny 2022-03-01 a 2022-04-01: 94 estación-día
+uext-mhny: consultando 2022-04-01 a 2022-05-01 (fin exclusivo)
+uext-mhny 2022-04-01 a 2022-05-01: 1444 estación-día
+uext-mhny: consultando 2022-05-01 a 2022-06-01 (fin exclusivo)
+uext-mhny 2022-05-01 a 2022-06-01: 1389 estación-día
+uext-mhny: consultando 2022-06-01 a 2022-07-01 (fin exclusivo)
+uext-mhny 2022-06-01 a 2022-07-01: 1520 estación-día
+uext-mhny: consultando 2022-07-01 a 2022-08-01 (fin exclusivo)
+uext-mhny 2022-07-01 a 2022-08-01: 1475 estación-día
+uext-mhny: consultando 2022-08-01 a 2022-09-01 (fin exclusivo)
+uext-mhny 2022-08-01 a 2022-09-01: 1419 estación-día
+uext-mhny: consultando 2022-09-01 a 2022-10-01 (fin exclusivo)
+uext-mhny 2022-09-01 a 2022-10-01: 1347 estación-día
+uext-mhny: consultando 2022-10-01 a 2022-11-01 (fin exclusivo)
+uext-mhny 2022-10-01 a 2022-11-01: 1449 estación-día
+uext-mhny: consultando 2022-11-01 a 2022-12-01 (fin exclusivo)
+uext-mhny 2022-11-01 a 2022-12-01: 257 estación-día
+uext-mhny: consultando 2022-12-01 a 2023-01-01 (fin exclusivo)
+uext-mhny 2022-12-01 a 2023-01-01: 1126 estación-día
+uext-mhny: consultando 2023-01-01 a 2023-02-01 (fin exclusivo)
+uext-mhny 2023-01-01 a 2023-02-01: 1419 estación-día
+uext-mhny: consultando 2023-02-01 a 2023-03-01 (fin exclusivo)
+uext-mhny 2023-02-01 a 2023-03-01: 1391 estación-día
+uext-mhny: consultando 2023-03-01 a 2023-04-01 (fin exclusivo)
+uext-mhny 2023-03-01 a 2023-04-01: 1201 estación-día
+uext-mhny: consultando 2023-04-01 a 2023-05-01 (fin exclusivo)
+uext-mhny 2023-04-01 a 2023-05-01: 789 estación-día
+uext-mhny: consultando 2023-05-01 a 2023-06-01 (fin exclusivo)
+uext-mhny 2023-05-01 a 2023-06-01: 702 estación-día
+uext-mhny: consultando 2023-06-01 a 2023-07-01 (fin exclusivo)
+uext-mhny 2023-06-01 a 2023-07-01: 601 estación-día
+uext-mhny: consultando 2023-07-01 a 2023-08-01 (fin exclusivo)
+uext-mhny 2023-07-01 a 2023-08-01: 610 estación-día
+uext-mhny: consultando 2023-08-01 a 2023-09-01 (fin exclusivo)
+uext-mhny 2023-08-01 a 2023-09-01: 499 estación-día
+uext-mhny: consultando 2023-09-01 a 2023-10-01 (fin exclusivo)
+uext-mhny 2023-09-01 a 2023-10-01: 174 estación-día
+uext-mhny: consultando 2023-10-01 a 2023-11-01 (fin exclusivo)
+uext-mhny 2023-10-01 a 2023-11-01: 107 estación-día
+uext-mhny: consultando 2023-11-01 a 2023-12-01 (fin exclusivo)
+uext-mhny 2023-11-01 a 2023-12-01: 94 estación-día
+uext-mhny: consultando 2023-12-01 a 2024-01-01 (fin exclusivo)
+uext-mhny 2023-12-01 a 2024-01-01: 52 estación-día
+uext-mhny: consultando 2024-01-01 a 2024-02-01 (fin exclusivo)
+uext-mhny 2024-01-01 a 2024-02-01: 56 estación-día
+uext-mhny: consultando 2024-02-01 a 2024-03-01 (fin exclusivo)
+uext-mhny 2024-02-01 a 2024-03-01: 34 estación-día
+uext-mhny: consultando 2024-03-01 a 2024-04-01 (fin exclusivo)
+uext-mhny 2024-03-01 a 2024-04-01: 67 estación-día
+uext-mhny: consultando 2024-04-01 a 2024-05-01 (fin exclusivo)
+uext-mhny 2024-04-01 a 2024-05-01: 80 estación-día
+uext-mhny: consultando 2024-05-01 a 2024-06-01 (fin exclusivo)
+uext-mhny 2024-05-01 a 2024-06-01: 73 estación-día
+uext-mhny: consultando 2024-06-01 a 2024-07-01 (fin exclusivo)
+uext-mhny 2024-06-01 a 2024-07-01: 70 estación-día
+uext-mhny: consultando 2024-07-01 a 2024-08-01 (fin exclusivo)
+uext-mhny 2024-07-01 a 2024-08-01: 100 estación-día
+uext-mhny: consultando 2024-08-01 a 2024-09-01 (fin exclusivo)
+uext-mhny 2024-08-01 a 2024-09-01: 145 estación-día
+uext-mhny: consultando 2024-09-01 a 2024-10-01 (fin exclusivo)
+uext-mhny 2024-09-01 a 2024-10-01: 311 estación-día
+uext-mhny: consultando 2024-10-01 a 2024-11-01 (fin exclusivo)
+uext-mhny 2024-10-01 a 2024-11-01: 260 estación-día
+uext-mhny: consultando 2024-11-01 a 2024-12-01 (fin exclusivo)
+uext-mhny 2024-11-01 a 2024-12-01: 1283 estación-día
+uext-mhny: consultando 2024-12-01 a 2025-01-01 (fin exclusivo)
+uext-mhny 2024-12-01 a 2025-01-01: 1282 estación-día
+uext-mhny: consultando 2025-01-01 a 2025-02-01 (fin exclusivo)
+uext-mhny 2025-01-01 a 2025-02-01: 1342 estación-día
+uext-mhny: consultando 2025-02-01 a 2025-03-01 (fin exclusivo)
+uext-mhny 2025-02-01 a 2025-03-01: 192 estación-día
+uext-mhny: consultando 2025-03-01 a 2025-04-01 (fin exclusivo)
+uext-mhny 2025-03-01 a 2025-04-01: 1045 estación-día
+uext-mhny: consultando 2025-04-01 a 2025-05-01 (fin exclusivo)
+uext-mhny 2025-04-01 a 2025-05-01: 1238 estación-día
+uext-mhny: consultando 2025-05-01 a 2025-06-01 (fin exclusivo)
+uext-mhny 2025-05-01 a 2025-06-01: 1145 estación-día
+uext-mhny: consultando 2025-06-01 a 2025-07-01 (fin exclusivo)
+uext-mhny 2025-06-01 a 2025-07-01: 1439 estación-día
+uext-mhny: consultando 2025-07-01 a 2025-08-01 (fin exclusivo)
+uext-mhny 2025-07-01 a 2025-08-01: 1526 estación-día
+uext-mhny: consultando 2025-08-01 a 2025-09-01 (fin exclusivo)
+uext-mhny 2025-08-01 a 2025-09-01: 1483 estación-día
+uext-mhny: consultando 2025-09-01 a 2025-10-01 (fin exclusivo)
+uext-mhny 2025-09-01 a 2025-10-01: 1508 estación-día
+uext-mhny: consultando 2025-10-01 a 2025-11-01 (fin exclusivo)
+uext-mhny 2025-10-01 a 2025-11-01: 1741 estación-día
+uext-mhny: consultando 2025-11-01 a 2025-12-01 (fin exclusivo)
+uext-mhny 2025-11-01 a 2025-12-01: 1824 estación-día
+uext-mhny: consultando 2025-12-01 a 2026-01-01 (fin exclusivo)
+uext-mhny 2025-12-01 a 2026-01-01: 1784 estación-día
+uext-mhny: consultando 2026-01-01 a 2026-02-01 (fin exclusivo)
+uext-mhny 2026-01-01 a 2026-02-01: 1785 estación-día
+uext-mhny: consultando 2026-02-01 a 2026-03-01 (fin exclusivo)
+uext-mhny 2026-02-01 a 2026-03-01: 1659 estación-día
+uext-mhny: consultando 2026-03-01 a 2026-04-01 (fin exclusivo)
+uext-mhny 2026-03-01 a 2026-04-01: 1845 estación-día
+uext-mhny: consultando 2026-04-01 a 2026-05-01 (fin exclusivo)
+uext-mhny 2026-04-01 a 2026-05-01: 1343 estación-día
+uext-mhny: consultando 2026-05-01 a 2026-06-01 (fin exclusivo)
+uext-mhny 2026-05-01 a 2026-06-01: 1288 estación-día
+uext-mhny: consultando 2026-06-01 a 2026-07-01 (fin exclusivo)
+uext-mhny 2026-06-01 a 2026-07-01: 1355 estación-día
+uext-mhny: consultando 2026-07-01 a 2026-08-01 (fin exclusivo)
+uext-mhny 2026-07-01 a 2026-08-01: 962 estación-día
+uext-mhny: consultando 2026-08-01 a 2026-09-01 (fin exclusivo)
+uext-mhny 2026-08-01 a 2026-09-01: 863 estación-día
+uext-mhny: consultando 2026-09-01 a 2026-10-01 (fin exclusivo)
+uext-mhny 2026-09-01 a 2026-10-01: 1496 estación-día
+uext-mhny: consultando 2026-10-01 a 2026-11-01 (fin exclusivo)
+uext-mhny 2026-10-01 a 2026-11-01: 1586 estación-día

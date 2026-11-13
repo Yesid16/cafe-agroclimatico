@@ -1,0 +1,84 @@
+{
+  "politica": {
+    "humedad": "Omitir medias diarias <20% antes de promediar estaciones.",
+    "lluvia": "Omitir días >300 mm o series de >=3 días consecutivos con igual valor/n y total diario >100 mm.",
+    "interpretacion": "Sensibilidad conservadora, no límites físicos certificados. Puede excluir extremos reales; no sustituye validar sensores.",
+    "sin_cambios": "No se escala humedad ni se deduplican totales agregados por división; se conservan fuentes y experimento original."
+  },
+  "datasets": [
+    {
+      "variable": "precip",
+      "archivo": "precip_diaria.csv",
+      "sha256_verificado": true,
+      "filas_originales": 78264,
+      "dias_cumplen_cobertura": 64988,
+      "filas_omitidas_solo_en_variante": 30,
+      "motivos": {
+        "tasa_media_lluvia_repetida": 20,
+        "lluvia_diaria_mayor300": 10
+      },
+      "ano2024": {
+        "filas": 6326,
+        "n_total_distinto_n": 4850,
+        "cumplen_cobertura": 1379
+      }
+    },
+    {
+      "variable": "temp",
+      "archivo": "temp_diaria.csv",
+      "sha256_verificado": true,
+      "filas_originales": 55224,
+      "dias_cumplen_cobertura": 44744,
+      "filas_omitidas_solo_en_variante": 0,
+      "motivos": {},
+      "ano2024": {
+        "filas": 3756,
+        "n_total_distinto_n": 3489,
+        "cumplen_cobertura": 212
+      }
+    },
+    {
+      "variable": "humedad",
+      "archivo": "humedad_diaria.csv",
+      "sha256_verificado": true,
+      "filas_originales": 55516,
+      "dias_cumplen_cobertura": 43233,
+      "filas_omitidas_solo_en_variante": 1620,
+      "motivos": {
+        "humedad_diaria_menor20": 1620
+      },
+      "ano2024": {
+        "filas": 3761,
+        "n_total_distinto_n": 3495,
+        "cumplen_cobertura": 209
+      }
+    }
+  ],
+  "entrenamiento_ejecutado": false,
+  "agregacion_original_reproducida": true,
+  "original": {
+    "filas": 4372,
+    "municipios": 47,
+    "humedad_disponible": 4176,
+    "semanas_humedad_menor20": 47,
+    "semanas_lluvia_mayor500": 7
+  },
+  "variante": {
+    "filas": 4368,
+    "municipios": 47,
+    "humedad_disponible": 4121,
+    "cobertura_humedad": 0.9434523809523809,
+    "semanas_humedad_menor20": 0,
+    "semanas_lluvia_mayor500": 3,
+    "archivo": "data/review/processed/semanal.csv",
+    "sha256": "a86e7c83a39b299b9078cd2c5dd52b3c9e6ea2aeeb63d4d335e69a603ca7bcae"
+  },
+  "comparacion": {
+    "solo_original": 4,
+    "solo_variante": 0,
+    "comunes": 4368,
+    "humedad_pct_modificada_en_semanas_comunes": 192,
+    "lluvia_mm_modificada_en_semanas_comunes": 3,
+    "temp_c_modificada_en_semanas_comunes": 0
+  }
+}

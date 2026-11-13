@@ -1,0 +1,58 @@
+[
+  {
+    "escenario": "mixto",
+    "smart": false,
+    "factible": true,
+    "nodos": 4,
+    "asignacion": {
+      "deshierba": 0,
+      "fertilizacion": 2,
+      "recoleccion": 0
+    },
+    "motivo": ""
+  },
+  {
+    "escenario": "mixto",
+    "smart": true,
+    "factible": true,
+    "nodos": 4,
+    "asignacion": {
+      "fertilizacion": 2,
+      "deshierba": 0,
+      "recoleccion": 0
+    },
+    "motivo": ""
+  },
+  {
+    "escenario": "solo_alta",
+    "smart": false,
+    "factible": false,
+    "nodos": 0,
+    "asignacion": {},
+    "motivo": "'deshierba' no tiene ninguna ventana viable: el clima esperado no es adecuado (requiere lluvia Baja/Media) o excede la mano de obra."
+  },
+  {
+    "escenario": "solo_alta",
+    "smart": true,
+    "factible": false,
+    "nodos": 0,
+    "asignacion": {},
+    "motivo": "'deshierba' no tiene ninguna ventana viable: el clima esperado no es adecuado (requiere lluvia Baja/Media) o excede la mano de obra."
+  },
+  {
+    "escenario": "capacidad_baja",
+    "smart": false,
+    "factible": false,
+    "nodos": 0,
+    "asignacion": {},
+    "motivo": "'recoleccion' no tiene ninguna ventana viable: el clima esperado no es adecuado (requiere lluvia Baja/Media) o excede la mano de obra."
+  },
+  {
+    "escenario": "capacidad_baja",
+    "smart": true,
+    "factible": false,
+    "nodos": 0,
+    "asignacion": {},
+    "motivo": "'recoleccion' no tiene ninguna ventana viable: el clima esperado no es adecuado (requiere lluvia Baja/Media) o excede la mano de obra."
+  }
+]

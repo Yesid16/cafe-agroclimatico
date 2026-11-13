@@ -1,0 +1,72 @@
+/* Interfaz clara; sin dependencias de fuentes o imágenes externas. */
+:root {
+  --agro-ink: #243d32;
+  --agro-muted: #718078;
+  --agro-green: #28745a;
+  --agro-border: #e1e9e2;
+  --agro-bg: #f6f8f5;
+}
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+  background: var(--agro-bg); color: var(--agro-ink);
+}
+[data-testid="stHeader"] { background: rgba(246,248,245,.96); }
+.block-container { max-width: 1440px; padding-top: 2.1rem; padding-bottom: 3rem; }
+h1, h2, h3, p, label { font-family: "Segoe UI", Arial, sans-serif; }
+h1, h2, h3 { color: var(--agro-ink); letter-spacing: -.035em; }
+[data-testid="stSidebar"] {
+  background: #fff; border-right: 1px solid var(--agro-border);
+}
+[data-testid="stSidebar"] > div:first-child { padding-top: 1.7rem; }
+[data-testid="stSidebar"] [data-testid="stExpander"] {
+  background: #f8faf7; border: 1px solid var(--agro-border); border-radius: 12px;
+}
+[data-testid="stSidebar"] label { color: #425b4d; font-size: .88rem; }
+.agro-brand { display: flex; align-items: center; gap: 11px; margin-bottom: 1.7rem; }
+.agro-brand-icon {
+  width: 41px; height: 41px; border-radius: 13px; background: #eaf3ec;
+  display: flex; align-items: center; justify-content: center; font-size: 23px;
+}
+.agro-brand strong { display:block; font-size: 1.05rem; letter-spacing: -.03em; }
+.agro-brand small { display:block; color: var(--agro-muted); font-size: .75rem; margin-top: 2px; }
+.agro-eyebrow { color: var(--agro-green); font-size: .71rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.agro-hero { padding: 0 0 1.1rem; }
+.agro-hero h1 { font-size: clamp(1.8rem, 3.2vw, 2.65rem); font-weight: 700; line-height: 1.18; margin: .45rem 0 .5rem; padding: 0; }
+.agro-hero p { color: var(--agro-muted); font-size: 1rem; margin: 0; line-height: 1.65; }
+.agro-badge { display: inline-block; padding: 5px 10px; border-radius: 20px; background: #edf2ec; color: #5a7260; font-size: .74rem; font-weight: 600; margin-bottom: .6rem; }
+.agro-card {
+  background: #fff; border: 1px solid var(--agro-border); border-radius: 15px;
+  padding: 18px 20px; height: 139px; box-sizing: border-box; margin-bottom: 1.2rem;
+  box-shadow: 0 3px 12px rgba(31,65,45,.025);
+}
+.agro-card-label { color: var(--agro-muted); font-size: .74rem; margin-bottom: 10px; }
+.agro-card-value { color: var(--agro-ink); font-size: clamp(1.15rem,1.7vw,1.65rem); font-weight: 650; line-height: 1.2; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.agro-card-note { color: var(--agro-muted); font-size: .72rem; margin-top: 8px; }
+.agro-card-value[data-risk="Bajo"] { color: #28745a; }
+.agro-card-value[data-risk="Medio"] { color: #a06b17; }
+.agro-card-value[data-risk="Alto"] { color: #b95848; }
+[data-baseweb="tab-list"] { gap: 8px; border-bottom: 1px solid var(--agro-border); background: transparent; padding: 0 0 9px; flex-wrap: wrap; }
+button[data-baseweb="tab"] {
+  background: transparent; border-radius: 9px; padding: 9px 16px; height: auto;
+  color: #6a7b70; font-weight: 500;
+}
+button[data-baseweb="tab"][aria-selected="true"] { background: #e6f0e8; color: #205e47; }
+[data-baseweb="tab-highlight"], [data-baseweb="tab-border"] { display: none; }
+[data-baseweb="tab-panel"] { padding-top: 1.4rem; }
+[data-testid="stPlotlyChart"] { background: white; border: 1px solid var(--agro-border); border-radius: 15px; overflow: hidden; padding: 7px; }
+[data-testid="stMetric"] { background: #fff; border: 1px solid var(--agro-border); border-radius: 13px; padding: 18px; }
+[data-testid="stDataFrame"] { border-radius: 12px; overflow: hidden; }
+[data-testid="stButton"] button { border-radius: 9px; border-color: #dbe5dc; }
+[data-testid="stButton"] button:hover { border-color: var(--agro-green); color: var(--agro-green); background: #eef5ee; }
+[data-testid="stTextInput"] input, [data-testid="stNumberInput"] input { color: var(--agro-ink); }
+[data-baseweb="select"] > div, [data-baseweb="input"] { border-radius: 9px; }
+[data-testid="stChatMessage"] { background: white; border: 1px solid var(--agro-border); border-radius: 14px; }
+[data-testid="stChatInput"] { border-radius: 13px; border: 1px solid #d9e4db; background: white; }
+.agro-chat-welcome { text-align: center; padding: 2rem 1.2rem 1.2rem; color: var(--agro-muted); }
+.agro-chat-welcome h3 { font-size: 1.45rem; margin: .6rem 0; }
+.agro-chat-welcome p { font-size: .94rem; color: var(--agro-muted); }
+.agro-section-note { color: var(--agro-muted); font-size: .87rem; margin: -.25rem 0 1rem; }
+@media (max-width: 768px) {
+  .block-container { padding: 1.2rem 1rem 2rem; }
+  .agro-card { height: auto; min-height: 110px; margin-bottom: .4rem; }
+  button[data-baseweb="tab"] { padding: 8px 10px; font-size: .8rem; }
+}

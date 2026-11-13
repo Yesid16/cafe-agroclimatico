@@ -1,0 +1,9 @@
+{
+  "filas": 4372,
+  "municipios": 47,
+  "desde": "2022-01-09",
+  "hasta": "2026-11-01",
+  "cobertura_humedad": 0.9551692589204026,
+  "lluvia_semanas_extrapoladas": 1160,
+  "limitacion": "Promedio municipal de estaciones; humedad no mide agua libre foliar. No hay etiquetas de incidencia de roya."
+}

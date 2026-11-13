@@ -1,13 +1,13 @@
 # Fuentes del corpus RAG
 
-Los archivos `notas_*.md` de esta carpeta son **notas de síntesis redactadas por el equipo** con
-conocimiento agronómico general y NO sustituyen la literatura oficial. Para cumplir con el rigor
-del proyecto, **descargue y agregue a esta carpeta (PDF) publicaciones abiertas verificables**:
+Descarga reproducible: python -m cafe.fetch_corpus. urls.txt admite nombre.pdf|URL directa. Se usa el portal actual de la FNC/Cenicafé; los enlaces antiguos de biblioteca.cenicafe.org no resolvieron durante la revisión.
 
-- Cenicafé – Avances Técnicos y Boletines (roya, manejo integrado, fertilización, cosecha): https://www.cenicafe.org
-- Federación Nacional de Cafeteros – publicaciones y Manual del Cafetero Colombiano: https://federaciondecafeteros.org
-- IDEAM – boletines agroclimáticos y de predicción climática (ENSO): https://www.ideam.gov.co
+| Archivo | Publicación original | Referencia |
+|---|---|---|
+| avt0498.pdf | López, Marín-Ramírez, Gaitán y Ángel (2018). Diagrama de Área Estándar para la estimación visual de severidad de roya del cafeto. Avance 498 | https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/view/165 |
+| avt0391.pdf | Sadeghian (2010). Fertilización: Una práctica que determina la producción de los cafetales. Avance 391 | https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/view/1638 |
+| avt0545.pdf | Salazar-Gutiérrez y Sadeghian (2022). Épocas recomendables para la fertilización del café antes y después de la zoca. Avance 545 | https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/view/272 |
 
-Escriba las URLs directas de los PDF en `corpus/urls.txt` (una por línea) y ejecute
-`python -m cafe.fetch_corpus`. Luego reinicie la app: el RAG indexa automáticamente todos los PDF.
-Este archivo no se indexa. Registre en el informe qué documentos usó finalmente.
+Conservar atribución y documentos sin modificaciones; revisar las condiciones Creative Commons indicadas en cada publicación. Son fuentes de consulta académica. manifest.json registra URL, SHA-256, páginas y palabras extraíbles; el descargador falla si una URL devuelve HTML o un PDF sin texto.
+
+Las notas notas_*.md son síntesis previas del equipo, no publicaciones oficiales ni validación de los umbrales del indicador. El recuperador mantiene nombre de origen y página de cada fragmento PDF. FUENTES.md, urls.txt y el manifiesto no se indexan.

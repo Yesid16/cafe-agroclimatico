@@ -1,0 +1,37 @@
+{
+  "filas": 4372,
+  "municipios": 47,
+  "duplicados_municipio_semana": 0,
+  "humedad_disponible": 4176,
+  "humedad_faltante": 196,
+  "cobertura_humedad": 0.9551692589204026,
+  "lluvia_extrapolada": 1160,
+  "proporcion_lluvia_extrapolada": 0.2653247941445563,
+  "humedad_menor20": 47,
+  "lluvia_mayor500": 7,
+  "filas_para_revision": 54,
+  "filas_por_ano": {
+    "2022": 943,
+    "2023": 660,
+    "2024": 11,
+    "2025": 1360,
+    "2026": 1398
+  },
+  "departamentos": {
+    "ANTIOQUIA": 28,
+    "CALDAS": 8,
+    "QUINDIO": 7,
+    "RISARALDA": 4
+  },
+  "rango_etiquetas_semanales": [
+    "2022-01-09",
+    "2026-11-01"
+  ],
+  "criterio_banderas": "Humedad semanal <20% o lluvia >500 mm/semana: investigar sensores/unidades; no confirman error ni se eliminan automáticamente.",
+  "estado": "Datos pertinentes para MVP exploratorio; calidad meteorológica no certificada. Revisar anomalías y discontinuidad antes de inferencia agronómica.",
+  "utc": "2026-11-13T04:37:28.893879+00:00",
+  "artefactos_sha256": {
+    "data\\processed\\semanal.csv": "88356cc7fa4336a66f74294cb6f812a2a1a77f3e5335f9aa0e94c1f7be32ee47",
+    "data\\processed\\modelo_roya.pkl": "49e635a676e221fbe87620534e68e804f0a79b65034e8fde497b09cb117a57fe"
+  }
+}

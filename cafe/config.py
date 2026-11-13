@@ -4,9 +4,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_RAW = ROOT / "data" / "raw"
-DATA_PROC = ROOT / "data" / "processed"
+DATA_PROC = Path(os.getenv("CAFE_DATA_PROC") or ROOT / "data" / "processed")
 CORPUS_DIR = ROOT / "corpus"
-RESULTS_DIR = ROOT / "results"
+RESULTS_DIR = Path(os.getenv("CAFE_RESULTS_DIR") or ROOT / "results")
 
 # Carga opcional de .env (sin dependencia dura)
 _env = ROOT / ".env"
@@ -21,24 +21,32 @@ if _env.exists():
 SOCRATA_BASE = "https://www.datos.gov.co/resource"
 DS_PRECIP = "s54a-sgyg"   # Precipitación (lectura cada 10 min, mm)
 DS_TEMP = "sbwg-7ju4"     # Temperatura (red de estaciones IDEAM)
+DS_HUM = "uext-mhny"      # Humedad relativa del aire, horaria (%)
 DEPARTAMENTOS = ["ANTIOQUIA", "CALDAS", "RISARALDA", "QUINDIO", "QUINDÍO"]
 SOCRATA_APP_TOKEN = os.getenv("SOCRATA_APP_TOKEN")  # opcional: sube el límite de peticiones
 
 PRECIP_DAILY = DATA_RAW / "precip_diaria.csv"
 TEMP_DAILY = DATA_RAW / "temp_diaria.csv"
+HUM_DAILY = DATA_RAW / "humedad_diaria.csv"
 WEEKLY = DATA_PROC / "semanal.csv"
+CLIMATE_WEEKLY = DATA_PROC / "clima_semanal.csv"
 MODEL_PATH = DATA_PROC / "modelo_roya.pkl"
 
-# Calidad: lecturas mínimas por día (10 min → 144 lecturas/día)
+# Calidad: frecuencia declarada actual; además se controla >=12 horas distintas/día
 MIN_N_DAY = 72
+MIN_N_DAY_TEMP = 12  # temperatura y humedad son HORARIAS (24/día), no cada 10 min
+MIN_N_DAY_HUM = 12
 MIN_DAYS_WEEK_RAIN = 5
 MIN_DAYS_WEEK_TEMP = 4
+MIN_DAYS_WEEK_HUM = 4
 MIN_WEEKS_MUNICIPIO = 60
 
 # --- LLM (endpoint compatible con OpenAI). Sin clave => modo "mock" determinista ---
 LLM_API_KEY = os.getenv("LLM_API_KEY", "")
-LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
-LLM_MODEL = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile")
+LLM_BASE_URL = (os.getenv("LLM_BASE_URL") or "https://integrate.api.nvidia.com/v1")
+LLM_MODEL = (os.getenv("LLM_MODEL") or "nvidia/nemotron-3.5-lightning-30b-a3b")
+LLM_TIMEOUT = float(os.getenv("LLM_TIMEOUT", "60"))
+LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "1024"))
 T_MAX = int(os.getenv("AGENT_T_MAX", "6"))  # iteraciones máximas del loop agéntico
 
 # --- RAG ---

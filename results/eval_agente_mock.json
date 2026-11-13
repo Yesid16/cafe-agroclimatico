@@ -1,0 +1,846 @@
+{
+  "resumen": {
+    "modo_solicitado": "mock",
+    "modelo": null,
+    "utc": "2026-11-13T04:28:35.710172+00:00",
+    "n": 12,
+    "herramienta_ok": 12,
+    "cita_ok": 12,
+    "n_cita_requerida": 10,
+    "citas_requeridas_ok": 10,
+    "n_llm_real": 0,
+    "n_fallback": 0,
+    "n_agotadas": 0
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuál es el riesgo de roya la próxima semana en Abriaqui / Antioquia?",
+      "esperadas": [
+        "risk"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "risk"
+      ],
+      "citas_validas": [
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "En ABRIAQUI / ANTIOQUIA (último dato: semana del 2026-11-01; lluvia 2.8 mm, 17.2 °C) el riesgo climático de roya más probable para la próxima semana es **Bajo** (Bajo 92%, Medio 5%, Alto 3%). Indicador climático, no es diagnóstico de campo ni recomendación agronómica. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+      "trace": [
+        {
+          "tool": "risk",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semana_ultimo_dato": "2026-11-01",
+            "evidencia": {
+              "Trim": "SON",
+              "Lluvia": "Baja",
+              "Temp": "Fria",
+              "Humedad": "Desde80",
+              "Lluvia_prev": "Baja"
+            },
+            "prob_riesgo_semana_siguiente": {
+              "Bajo": 0.919,
+              "Medio": 0.054,
+              "Alto": 0.027
+            },
+            "riesgo_mas_probable": "Bajo",
+            "lluvia_ultima_semana_mm": 2.8,
+            "temp_ultima_semana_c": 17.2,
+            "aviso": "Indicador climático, no es diagnóstico de campo ni recomendación agronómica.",
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Qué probabilidad hay de riesgo alto de roya en Abriaqui / Antioquia?",
+      "esperadas": [
+        "risk"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "risk"
+      ],
+      "citas_validas": [
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "En ABRIAQUI / ANTIOQUIA (último dato: semana del 2026-11-01; lluvia 2.8 mm, 17.2 °C) el riesgo climático de roya más probable para la próxima semana es **Bajo** (Bajo 92%, Medio 5%, Alto 3%). Indicador climático, no es diagnóstico de campo ni recomendación agronómica. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+      "trace": [
+        {
+          "tool": "risk",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semana_ultimo_dato": "2026-11-01",
+            "evidencia": {
+              "Trim": "SON",
+              "Lluvia": "Baja",
+              "Temp": "Fria",
+              "Humedad": "Desde80",
+              "Lluvia_prev": "Baja"
+            },
+            "prob_riesgo_semana_siguiente": {
+              "Bajo": 0.919,
+              "Medio": 0.054,
+              "Alto": 0.027
+            },
+            "riesgo_mas_probable": "Bajo",
+            "lluvia_ultima_semana_mm": 2.8,
+            "temp_ultima_semana_c": 17.2,
+            "aviso": "Indicador climático, no es diagnóstico de campo ni recomendación agronómica.",
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Qué es la roya del cafeto y cuáles son sus síntomas?",
+      "esperadas": [
+        "search_docs"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "search_docs"
+      ],
+      "citas_validas": [
+        "[avt0498.pdf:p1#0]",
+        "[notas_roya.md#0]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "# Notas del equipo: roya del cafeto (resumen no oficial; verificar con Cenicafé) La roya del cafeto es causada por el hongo Hemileia vastatrix. Es una de las enfermedades más importantes del café en Colombia. Los síntomas aparecen en las hojas: manchas amarillo-anaranjadas en el envés y un polvillo anaranjado (uredosporas); las lesiones se secan, y con ataques fuertes se produce caída prematura de hojas y pérdida de … [notas_roya.md#0]\n\nDiagrama de Área Estándar para la estimación visual de severidad de roya del cafeto La roya del cafeto (Hemileia vastatrix Berk. & Br.) es la enfermedad que causa la mayor pérdida económica al cultivo del café en el mundo, su único hospedante, principalmente en variedades de Coffea arabica . Afecta directamente las hojas disminuyendo el área fotosintética, causa fuerte defoliación, frutos de menor peso, debilita y ca… [avt0498.pdf:p1#0]",
+      "trace": [
+        {
+          "tool": "search_docs",
+          "args": {
+            "query": "¿Qué es la roya del cafeto y cuáles son sus síntomas?"
+          },
+          "result": {
+            "resultados": [
+              {
+                "cita": "[notas_roya.md#0]",
+                "score": 0.153,
+                "texto": "# Notas del equipo: roya del cafeto (resumen no oficial; verificar con Cenicafé) La roya del cafeto es causada por el hongo Hemileia vastatrix. Es una de las enfermedades más importantes del café en Colombia. Los síntomas aparecen en las hojas: manchas amarillo-anaranjadas en el envés y un polvillo anaranjado (uredosporas); las lesiones se secan, y con ataques fuertes se produce caída prematura de hojas y pérdida de producción. Condiciones que favorecen la enfermedad: el hongo necesita agua libre sobre la hoja para germinar, por lo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para",
+                "fuente": "notas_roya.md",
+                "pagina": null,
+                "url": null
+              },
+              {
+                "cita": "[avt0498.pdf:p1#0]",
+                "score": 0.146,
+                "texto": "Diagrama de Área Estándar para la estimación visual de severidad de roya del cafeto La roya del cafeto (Hemileia vastatrix Berk. & Br.) es la enfermedad que causa la mayor pérdida económica al cultivo del café en el mundo, su único hospedante, principalmente en variedades de Coffea arabica . Afecta directamente las hojas disminuyendo el área fotosintética, causa fuerte defoliación, frutos de menor peso, debilita y causa muerte de ramas productivas y de la planta completa o el denominado “paloteo de los árboles”. Afecta la calidad y causa pérdidas en la cantidad de la producción que pueden ascender del 30% al 50% en variedades susceptibles como Caturra, Típica, Borbón, Geisha",
+                "fuente": "avt0498.pdf",
+                "pagina": 1,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[avt0498.pdf:p4#0]",
+                "score": 0.121,
+                "texto": "Desarrollo de un DAE para la estimación visual cuantitativa de severidad de roya del cafeto en el campo Con el objetivo de mejorar las evaluaciones cuantitativas de severidad de roya del cafeto en las diferentes investigaciones de Cenicafé sobre biología, epidemiología, resistencia genética y manejo integral de roya en Colombia, y para fortalecer el monitoreo de la enfermedad en variedades susceptibles y resistentes por parte del Servicio de Extensión de la FNC, asistentes técnicos y los caficultores, se desarrolló y validó un DAE nuevo para roya del cafeto en el campo, comparándolo con los diagramas existentes (Kushalappa y Chaves, 1980; Villegas, 1985; Capucho et al., 2011). La investigación se hizo",
+                "fuente": "avt0498.pdf",
+                "pagina": 4,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[avt0498.pdf:p3#6]",
+                "score": 0.12,
+                "texto": "de estimación visual en la cuantificación de severidad han sido demostradas y validadas para muchas enfermedades en diferentes cultivos de importancia económica en el mundo, incluyendo algunas en el cultivo del café (SADBank, 2018). Para la roya del cafeto se conocen tres diagramas para la estimación cuantitativa de severidad de roya natural o en el campo, desarrollados por Kushalappa y Chaves (1980) en Brasil, Villegas (1985) en Colombia, y Capucho et al. (2011) en Brasil, los cuales han sido usados principalmente en investigaciones. En México usan una escala logaritmica diagramática de siete clases en imágenes para severidad de roya, en el programa de vigilancia epidemiológico del cafeto (Mora et al.,",
+                "fuente": "avt0498.pdf",
+                "pagina": 3,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              }
+            ]
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué condiciones de clima favorecen la roya?",
+      "esperadas": [
+        "search_docs"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "search_docs"
+      ],
+      "citas_validas": [
+        "[avt0545.pdf:p4#0]",
+        "[notas_roya.md#0]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "# Notas del equipo: roya del cafeto (resumen no oficial; verificar con Cenicafé) La roya del cafeto es causada por el hongo Hemileia vastatrix. Es una de las enfermedades más importantes del café en Colombia. Los síntomas aparecen en las hojas: manchas amarillo-anaranjadas en el envés y un polvillo anaranjado (uredosporas); las lesiones se secan, y con ataques fuertes se produce caída prematura de hojas y pérdida de … [notas_roya.md#0]\n\núltimo ciclo de producción del cultivo anterior al zoqueo. Una explicación a la falta de respuesta a la fertilización tres meses antes del zoqueo, consiste en que durante los dos meses previos a la cosecha se presenta acumulación cercana al 25% de nutrientes en el fruto de café, lo cual sugiere que para una cosecha en formación tiene mayor influencia la fertilización que se realiza durante los primeros dos a tres mes… [avt0545.pdf:p4#0]",
+      "trace": [
+        {
+          "tool": "search_docs",
+          "args": {
+            "query": "¿Qué condiciones de clima favorecen la roya?"
+          },
+          "result": {
+            "resultados": [
+              {
+                "cita": "[notas_roya.md#0]",
+                "score": 0.143,
+                "texto": "# Notas del equipo: roya del cafeto (resumen no oficial; verificar con Cenicafé) La roya del cafeto es causada por el hongo Hemileia vastatrix. Es una de las enfermedades más importantes del café en Colombia. Los síntomas aparecen en las hojas: manchas amarillo-anaranjadas en el envés y un polvillo anaranjado (uredosporas); las lesiones se secan, y con ataques fuertes se produce caída prematura de hojas y pérdida de producción. Condiciones que favorecen la enfermedad: el hongo necesita agua libre sobre la hoja para germinar, por lo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para",
+                "fuente": "notas_roya.md",
+                "pagina": null,
+                "url": null
+              },
+              {
+                "cita": "[avt0545.pdf:p4#0]",
+                "score": 0.08,
+                "texto": "último ciclo de producción del cultivo anterior al zoqueo. Una explicación a la falta de respuesta a la fertilización tres meses antes del zoqueo, consiste en que durante los dos meses previos a la cosecha se presenta acumulación cercana al 25% de nutrientes en el fruto de café, lo cual sugiere que para una cosecha en formación tiene mayor influencia la fertilización que se realiza durante los primeros dos a tres meses a partir de la floración, que aquella que se realiza en los dos meses previos a la recolección (Sadeghian et al., 2013). Efecto de la fertilización en la producción. Bajo condiciones de Naranjal, la fertilización realizada hasta los",
+                "fuente": "avt0545.pdf",
+                "pagina": 4,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/272/331"
+              },
+              {
+                "cita": "[avt0498.pdf:p2#1]",
+                "score": 0.08,
+                "texto": "lo cual ocurre de forma repetida, formando lesiones que cubren mayor área (Rivillas et al., 2011), y que cuando alcanzan más del 30% de la superficie de la hoja puede ocurrir su caída prematura, dependiendo de la edad y el estado nutricional de la misma. Cuantificación de la enfermedad La cuantificación de la intensidad de una enfermedad es fundamental para entender su importancia en función de las plantas afectadas, el medio ambiente, el clima, el manejo de la enfermedad y el cultivo. El seguimiento progresivo de la prevalencia, la incidencia y la severidad de una enfermedad como la roya, a través del tiempo, y su relación con el clima y",
+                "fuente": "avt0498.pdf",
+                "pagina": 2,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[avt0498.pdf:p2#2]",
+                "score": 0.075,
+                "texto": "de la prevalencia, la incidencia y la severidad de una enfermedad como la roya, a través del tiempo, y su relación con el clima y la fenología del cultivo, es básico para el conocimiento de la magnitud y dinámica de la epidemia en un área determinada y en un período de tiempo dado (Campbell y Madden, 1990). La enfermedad puede medirse como: Prevalencia Es la proporción o porcentaje de fincas o lotes que presentan la enfermedad en un área o región, en un momento o lapso de tiempo determinado, es útil para indicar la dispersión de la enfermedad. En el caso de la roya esta variable es poco funcional por",
+                "fuente": "avt0498.pdf",
+                "pagina": 2,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              }
+            ]
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 5,
+      "pregunta": "Arma un calendario de deshierba y fertilización para Abriaqui / Antioquia",
+      "esperadas": [
+        "schedule"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "schedule"
+      ],
+      "citas_validas": [
+        "[CSP calendario: clima esperado = climatología IDEAM del municipio]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Calendario sugerido para ABRIAQUI / ANTIOQUIA: deshierba: semana 1 (~2026-11-02, lluvia esperada Media); fertilizacion: semana 2 (~2026-11-09, lluvia esperada Media). Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM. [CSP calendario: clima esperado = climatología IDEAM del municipio]",
+      "trace": [
+        {
+          "tool": "schedule",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "labores": [
+              "deshierba",
+              "fertilizacion"
+            ]
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "clima_esperado_por_semana": [
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media"
+            ],
+            "cita": "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+            "aviso": "Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM.",
+            "factible": true,
+            "calendario": [
+              {
+                "labor": "deshierba",
+                "semana_inicio": 1,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              },
+              {
+                "labor": "fertilizacion",
+                "semana_inicio": 2,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-09",
+                "lluvia_esperada": "Media"
+              }
+            ],
+            "nodos": 2
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 6,
+      "pregunta": "¿Cuándo programo la cosecha y la fertilización en Abriaqui / Antioquia?",
+      "esperadas": [
+        "schedule"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "schedule"
+      ],
+      "citas_validas": [
+        "[CSP calendario: clima esperado = climatología IDEAM del municipio]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Calendario sugerido para ABRIAQUI / ANTIOQUIA: recoleccion: semana 1 (~2026-11-02, lluvia esperada Media); fertilizacion: semana 1 (~2026-11-02, lluvia esperada Media). Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM. [CSP calendario: clima esperado = climatología IDEAM del municipio]",
+      "trace": [
+        {
+          "tool": "schedule",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "labores": [
+              "fertilizacion",
+              "recoleccion"
+            ]
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "clima_esperado_por_semana": [
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media"
+            ],
+            "cita": "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+            "aviso": "Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM.",
+            "factible": true,
+            "calendario": [
+              {
+                "labor": "recoleccion",
+                "semana_inicio": 1,
+                "duracion_sem": 2,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              },
+              {
+                "labor": "fertilizacion",
+                "semana_inicio": 1,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              }
+            ],
+            "nodos": 2
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Cuánta lluvia y qué temperatura hubo en las últimas semanas en Abriaqui / Antioquia?",
+      "esperadas": [
+        "weather_summary"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "weather_summary"
+      ],
+      "citas_validas": [
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Clima semanal reciente en ABRIAQUI / ANTIOQUIA: 2026-09-27: 12.8 mm/17.7 °C, 2026-10-04: 25.8 mm/17.8 °C, 2026-10-11: 0.5 mm/17.1 °C, 2026-10-18: 0.4 mm/17.6 °C, 2026-10-25: 0.0 mm/16.9 °C, 2026-11-01: 2.8 mm/17.2 °C. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+      "trace": [
+        {
+          "tool": "weather_summary",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semanas": [
+              {
+                "semana": "2026-09-27",
+                "lluvia_mm": 12.8,
+                "temp_c": 17.7,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-04",
+                "lluvia_mm": 25.8,
+                "temp_c": 17.8,
+                "humedad_pct": 90.1
+              },
+              {
+                "semana": "2026-10-11",
+                "lluvia_mm": 0.5,
+                "temp_c": 17.1,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-18",
+                "lluvia_mm": 0.4,
+                "temp_c": 17.6,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-25",
+                "lluvia_mm": 0.0,
+                "temp_c": 16.9,
+                "humedad_pct": 92.1
+              },
+              {
+                "semana": "2026-11-01",
+                "lluvia_mm": 2.8,
+                "temp_c": 17.2,
+                "humedad_pct": 92.0
+              }
+            ],
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Cómo afecta la lluvia a la fertilización y cuándo conviene hacerla?",
+      "esperadas": [
+        "search_docs"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "schedule",
+        "search_docs",
+        "weather_summary"
+      ],
+      "citas_validas": [
+        "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+        "[avt0391.pdf:p2#3]",
+        "[notas_roya.md#1]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Calendario sugerido para ABRIAQUI / ANTIOQUIA: fertilizacion: semana 1 (~2026-11-02, lluvia esperada Media). Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM. [CSP calendario: clima esperado = climatología IDEAM del municipio]\n\nClima semanal reciente en ABRIAQUI / ANTIOQUIA: 2026-09-27: 12.8 mm/17.7 °C, 2026-10-04: 25.8 mm/17.8 °C, 2026-10-11: 0.5 mm/17.1 °C, 2026-10-18: 0.4 mm/17.6 °C, 2026-10-25: 0.0 mm/16.9 °C, 2026-11-01: 2.8 mm/17.2 °C. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]\n\ncomportamiento es la residualidad de algunos nutrientes aplicados vía fertilización, los cuales constituyen una reserva importante en el suelo, dependiendo de su naturaleza. Este Avance Técnico tiene como propósito mostrar cómo la fertilización afecta la producción de los cafetales; para ello se presentan los resultados obtenidos por Cenicafé en diferentes estudios realizados en la etapa de crecimiento vegetativo y e… [avt0391.pdf:p2#3]\n\nlo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para la infección; temperaturas muy bajas o muy altas la reducen. Las esporas se dispersan con la lluvia y el viento. En este proyecto el indicador de riesgo climático combina la temperatura semanal y la lluvia de las últimas dos semanas. Manejo integrado (resumen): usar var… [notas_roya.md#1]",
+      "trace": [
+        {
+          "tool": "schedule",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "labores": [
+              "fertilizacion"
+            ]
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "clima_esperado_por_semana": [
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media"
+            ],
+            "cita": "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+            "aviso": "Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM.",
+            "factible": true,
+            "calendario": [
+              {
+                "labor": "fertilizacion",
+                "semana_inicio": 1,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              }
+            ],
+            "nodos": 1
+          }
+        },
+        {
+          "tool": "weather_summary",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semanas": [
+              {
+                "semana": "2026-09-27",
+                "lluvia_mm": 12.8,
+                "temp_c": 17.7,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-04",
+                "lluvia_mm": 25.8,
+                "temp_c": 17.8,
+                "humedad_pct": 90.1
+              },
+              {
+                "semana": "2026-10-11",
+                "lluvia_mm": 0.5,
+                "temp_c": 17.1,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-18",
+                "lluvia_mm": 0.4,
+                "temp_c": 17.6,
+                "humedad_pct": 89.9
+              },
+              {
+                "semana": "2026-10-25",
+                "lluvia_mm": 0.0,
+                "temp_c": 16.9,
+                "humedad_pct": 92.1
+              },
+              {
+                "semana": "2026-11-01",
+                "lluvia_mm": 2.8,
+                "temp_c": 17.2,
+                "humedad_pct": 92.0
+              }
+            ],
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        },
+        {
+          "tool": "search_docs",
+          "args": {
+            "query": "¿Cómo afecta la lluvia a la fertilización y cuándo conviene hacerla?"
+          },
+          "result": {
+            "resultados": [
+              {
+                "cita": "[avt0391.pdf:p2#3]",
+                "score": 0.108,
+                "texto": "comportamiento es la residualidad de algunos nutrientes aplicados vía fertilización, los cuales constituyen una reserva importante en el suelo, dependiendo de su naturaleza. Este Avance Técnico tiene como propósito mostrar cómo la fertilización afecta la producción de los cafetales; para ello se presentan los resultados obtenidos por Cenicafé en diferentes estudios realizados en la etapa de crecimiento vegetativo y en la etapa de producción. Estudio 1. Fertilización con nitrógeno en la etapa de crecimiento vegetativo La fertilización de los cafetales debe iniciarse a partir de los primeros meses del establecimiento del cultivo. En cuanto al nitrógeno, Hernández y Suárez (3) determinaron el efecto de la época de la iniciación de",
+                "fuente": "avt0391.pdf",
+                "pagina": 2,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/1638/1776"
+              },
+              {
+                "cita": "[notas_roya.md#1]",
+                "score": 0.099,
+                "texto": "lo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para la infección; temperaturas muy bajas o muy altas la reducen. Las esporas se dispersan con la lluvia y el viento. En este proyecto el indicador de riesgo climático combina la temperatura semanal y la lluvia de las últimas dos semanas. Manejo integrado (resumen): usar variedades resistentes o tolerantes cuando se renueva el cultivo (por ejemplo variedades desarrolladas por Cenicafé), monitorear periódicamente la incidencia de roya en el lote, mantener la nutrición balanceada y el sombrío y la densidad adecuados, y recurrir al control químico u",
+                "fuente": "notas_roya.md",
+                "pagina": null,
+                "url": null
+              },
+              {
+                "cita": "[avt0498.pdf:p1#0]",
+                "score": 0.091,
+                "texto": "Diagrama de Área Estándar para la estimación visual de severidad de roya del cafeto La roya del cafeto (Hemileia vastatrix Berk. & Br.) es la enfermedad que causa la mayor pérdida económica al cultivo del café en el mundo, su único hospedante, principalmente en variedades de Coffea arabica . Afecta directamente las hojas disminuyendo el área fotosintética, causa fuerte defoliación, frutos de menor peso, debilita y causa muerte de ramas productivas y de la planta completa o el denominado “paloteo de los árboles”. Afecta la calidad y causa pérdidas en la cantidad de la producción que pueden ascender del 30% al 50% en variedades susceptibles como Caturra, Típica, Borbón, Geisha",
+                "fuente": "avt0498.pdf",
+                "pagina": 1,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[notas_labores.md#0]",
+                "score": 0.084,
+                "texto": "# Notas del equipo: labores del cultivo y clima (resumen no oficial; verificar con Cenicafé) Fertilización: se recomienda aplicar el fertilizante cuando el suelo tiene humedad suficiente, pues sin agua el nutriente no se aprovecha, y evitar las semanas de lluvias muy fuertes porque pueden arrastrar o lavar el producto. Por eso el calendario de este asistente permite fertilizar solo en semanas de lluvia media esperada. La cantidad y la época dependen del análisis de suelo, la edad del cultivo y la recomendación técnica del extensionista. Deshierba y manejo de arvenses: conviene realizarlo antes de fertilizar para disminuir la competencia por el nutriente; se prefiere hacerlo en semanas de lluvia",
+                "fuente": "notas_labores.md",
+                "pagina": null,
+                "url": null
+              }
+            ]
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Hay riesgo de roya en Abriaqui / Antioquia y qué manejo recomiendas?",
+      "esperadas": [
+        "risk",
+        "search_docs"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "risk",
+        "search_docs"
+      ],
+      "citas_validas": [
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+        "[avt0498.pdf:p4#0]",
+        "[notas_roya.md#1]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "En ABRIAQUI / ANTIOQUIA (último dato: semana del 2026-11-01; lluvia 2.8 mm, 17.2 °C) el riesgo climático de roya más probable para la próxima semana es **Bajo** (Bajo 92%, Medio 5%, Alto 3%). Indicador climático, no es diagnóstico de campo ni recomendación agronómica. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]\n\nlo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para la infección; temperaturas muy bajas o muy altas la reducen. Las esporas se dispersan con la lluvia y el viento. En este proyecto el indicador de riesgo climático combina la temperatura semanal y la lluvia de las últimas dos semanas. Manejo integrado (resumen): usar var… [notas_roya.md#1]\n\nDesarrollo de un DAE para la estimación visual cuantitativa de severidad de roya del cafeto en el campo Con el objetivo de mejorar las evaluaciones cuantitativas de severidad de roya del cafeto en las diferentes investigaciones de Cenicafé sobre biología, epidemiología, resistencia genética y manejo integral de roya en Colombia, y para fortalecer el monitoreo de la enfermedad en variedades susceptibles y resistentes … [avt0498.pdf:p4#0]",
+      "trace": [
+        {
+          "tool": "risk",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semana_ultimo_dato": "2026-11-01",
+            "evidencia": {
+              "Trim": "SON",
+              "Lluvia": "Baja",
+              "Temp": "Fria",
+              "Humedad": "Desde80",
+              "Lluvia_prev": "Baja"
+            },
+            "prob_riesgo_semana_siguiente": {
+              "Bajo": 0.919,
+              "Medio": 0.054,
+              "Alto": 0.027
+            },
+            "riesgo_mas_probable": "Bajo",
+            "lluvia_ultima_semana_mm": 2.8,
+            "temp_ultima_semana_c": 17.2,
+            "aviso": "Indicador climático, no es diagnóstico de campo ni recomendación agronómica.",
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        },
+        {
+          "tool": "search_docs",
+          "args": {
+            "query": "¿Hay riesgo de roya en Abriaqui / Antioquia y qué manejo recomiendas?"
+          },
+          "result": {
+            "resultados": [
+              {
+                "cita": "[notas_roya.md#1]",
+                "score": 0.142,
+                "texto": "lo que los periodos lluviosos y de alta humedad aumentan el riesgo. La temperatura media entre aproximadamente 21 y 25 °C se considera favorable para la infección; temperaturas muy bajas o muy altas la reducen. Las esporas se dispersan con la lluvia y el viento. En este proyecto el indicador de riesgo climático combina la temperatura semanal y la lluvia de las últimas dos semanas. Manejo integrado (resumen): usar variedades resistentes o tolerantes cuando se renueva el cultivo (por ejemplo variedades desarrolladas por Cenicafé), monitorear periódicamente la incidencia de roya en el lote, mantener la nutrición balanceada y el sombrío y la densidad adecuados, y recurrir al control químico u",
+                "fuente": "notas_roya.md",
+                "pagina": null,
+                "url": null
+              },
+              {
+                "cita": "[avt0498.pdf:p4#0]",
+                "score": 0.107,
+                "texto": "Desarrollo de un DAE para la estimación visual cuantitativa de severidad de roya del cafeto en el campo Con el objetivo de mejorar las evaluaciones cuantitativas de severidad de roya del cafeto en las diferentes investigaciones de Cenicafé sobre biología, epidemiología, resistencia genética y manejo integral de roya en Colombia, y para fortalecer el monitoreo de la enfermedad en variedades susceptibles y resistentes por parte del Servicio de Extensión de la FNC, asistentes técnicos y los caficultores, se desarrolló y validó un DAE nuevo para roya del cafeto en el campo, comparándolo con los diagramas existentes (Kushalappa y Chaves, 1980; Villegas, 1985; Capucho et al., 2011). La investigación se hizo",
+                "fuente": "avt0498.pdf",
+                "pagina": 4,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[avt0498.pdf:p5#1]",
+                "score": 0.105,
+                "texto": "DAE se comportó mejor que los diagramas publicados para la estimación de la severidad de roya del cafeto en el campo (datos no mostrados). Práctica de calibración del DAE para la severidad de roya en el campo El objetivo es familiarizar al usuario en el uso del nuevo DAE para la estimación visual del porcentaje de severidad de roya en hojas en el campo, y ayudar a calibrar o determinar si el usuario está ajustado a los valores reales, o está sobre-estimando o sub-estimando dichos valores. Para esta práctica se siguen los siguientes pasos: Para cada imagen de las 15 hojas de cafeto presentadas en la Figura 2, califique desde",
+                "fuente": "avt0498.pdf",
+                "pagina": 5,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              },
+              {
+                "cita": "[avt0498.pdf:p3#6]",
+                "score": 0.078,
+                "texto": "de estimación visual en la cuantificación de severidad han sido demostradas y validadas para muchas enfermedades en diferentes cultivos de importancia económica en el mundo, incluyendo algunas en el cultivo del café (SADBank, 2018). Para la roya del cafeto se conocen tres diagramas para la estimación cuantitativa de severidad de roya natural o en el campo, desarrollados por Kushalappa y Chaves (1980) en Brasil, Villegas (1985) en Colombia, y Capucho et al. (2011) en Brasil, los cuales han sido usados principalmente en investigaciones. En México usan una escala logaritmica diagramática de siete clases en imágenes para severidad de roya, en el programa de vigilancia epidemiológico del cafeto (Mora et al.,",
+                "fuente": "avt0498.pdf",
+                "pagina": 3,
+                "url": "https://publicaciones.cenicafe.org/index.php/avances_tecnicos/article/download/165/132"
+              }
+            ]
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 10,
+      "pregunta": "Dame el riesgo de roya y el calendario de labores para Abriaqui / Antioquia",
+      "esperadas": [
+        "risk",
+        "schedule"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [
+        "risk",
+        "schedule"
+      ],
+      "citas_validas": [
+        "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+        "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+      ],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Calendario sugerido para ABRIAQUI / ANTIOQUIA: recoleccion: semana 1 (~2026-11-02, lluvia esperada Media); deshierba: semana 1 (~2026-11-02, lluvia esperada Media); fertilizacion: semana 2 (~2026-11-09, lluvia esperada Media). Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM. [CSP calendario: clima esperado = climatología IDEAM del municipio]\n\nEn ABRIAQUI / ANTIOQUIA (último dato: semana del 2026-11-01; lluvia 2.8 mm, 17.2 °C) el riesgo climático de roya más probable para la próxima semana es **Bajo** (Bajo 92%, Medio 5%, Alto 3%). Indicador climático, no es diagnóstico de campo ni recomendación agronómica. [IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]",
+      "trace": [
+        {
+          "tool": "schedule",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "clima_esperado_por_semana": [
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media",
+              "Media"
+            ],
+            "cita": "[CSP calendario: clima esperado = climatología IDEAM del municipio]",
+            "aviso": "Calendario orientativo; valide con el extensionista y el pronóstico oficial del IDEAM.",
+            "factible": true,
+            "calendario": [
+              {
+                "labor": "recoleccion",
+                "semana_inicio": 1,
+                "duracion_sem": 2,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              },
+              {
+                "labor": "deshierba",
+                "semana_inicio": 1,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-02",
+                "lluvia_esperada": "Media"
+              },
+              {
+                "labor": "fertilizacion",
+                "semana_inicio": 2,
+                "duracion_sem": 1,
+                "fecha_inicio_aprox": "2026-11-09",
+                "lluvia_esperada": "Media"
+              }
+            ],
+            "nodos": 3
+          }
+        },
+        {
+          "tool": "risk",
+          "args": {
+            "municipio": "ABRIAQUI / ANTIOQUIA"
+          },
+          "result": {
+            "municipio": "ABRIAQUI / ANTIOQUIA",
+            "semana_ultimo_dato": "2026-11-01",
+            "evidencia": {
+              "Trim": "SON",
+              "Lluvia": "Baja",
+              "Temp": "Fria",
+              "Humedad": "Desde80",
+              "Lluvia_prev": "Baja"
+            },
+            "prob_riesgo_semana_siguiente": {
+              "Bajo": 0.919,
+              "Medio": 0.054,
+              "Alto": 0.027
+            },
+            "riesgo_mas_probable": "Bajo",
+            "lluvia_ultima_semana_mm": 2.8,
+            "temp_ultima_semana_c": 17.2,
+            "aviso": "Indicador climático, no es diagnóstico de campo ni recomendación agronómica.",
+            "cita": "[IDEAM datos.gov.co: s54a-sgyg, sbwg-7ju4, uext-mhny]"
+          }
+        }
+      ],
+      "exhausted": false
+    },
+    {
+      "id": 11,
+      "pregunta": "¿Cuál es el precio del dólar hoy?",
+      "esperadas": [],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 0,
+      "llamadas": [],
+      "citas_validas": [],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "Esa consulta está fuera de mi alcance: solo puedo ayudar con clima, riesgo de roya y labores del café en Antioquia y el Eje Cafetero.",
+      "trace": [],
+      "exhausted": false
+    },
+    {
+      "id": 12,
+      "pregunta": "Dame el riesgo de roya en Atlantis",
+      "esperadas": [
+        "risk"
+      ],
+      "herramienta_ok": true,
+      "cita_ok": true,
+      "errores_herramienta": 1,
+      "llamadas": [
+        "risk"
+      ],
+      "citas_validas": [],
+      "citas_no_respaldadas": [],
+      "modo": "mock",
+      "iter": 1,
+      "answer": "No pude completar 'risk': Municipio 'Atlantis' no disponible. Disponibles: ABRIAQUI / ANTIOQUIA, AMALFI / ANTIOQUIA, ANGOSTURA / ANTIOQUIA, ANSERMA / CALDAS, ARMENIA / ANTIOQUIA, ARMENIA / QUINDIO, BELALCAZAR / CALDAS, BELEN DE UMBRIA / RISARALDA, BELLO / ANTIOQUIA, BUENAVISTA / QUINDIO, CALARCA / QUINDIO, CALDAS / ANTIOQUIA, CIRCASIA / QUINDIO, CONCORDIA / ANTIOQUIA, DABEIBA / ANTIOQUIA, EL BAGRE / ANTIOQUIA, FREDONIA / ANTIOQUIA, FRONTINO / ANTIOQUIA, GUATICA / RISARALDA, MANIZALES / CALDAS, MANZANARES / CALDAS, MEDELLIN / ANTIOQUIA, MONTENEGRO / QUINDIO, PENSILVANIA / CALDAS, PEREIRA / RISARALDA",
+      "trace": [
+        {
+          "tool": "risk",
+          "args": {
+            "municipio": "Atlantis"
+          },
+          "result": {
+            "error": "Municipio 'Atlantis' no disponible. Disponibles: ABRIAQUI / ANTIOQUIA, AMALFI / ANTIOQUIA, ANGOSTURA / ANTIOQUIA, ANSERMA / CALDAS, ARMENIA / ANTIOQUIA, ARMENIA / QUINDIO, BELALCAZAR / CALDAS, BELEN DE UMBRIA / RISARALDA, BELLO / ANTIOQUIA, BUENAVISTA / QUINDIO, CALARCA / QUINDIO, CALDAS / ANTIOQUIA, CIRCASIA / QUINDIO, CONCORDIA / ANTIOQUIA, DABEIBA / ANTIOQUIA, EL BAGRE / ANTIOQUIA, FREDONIA / ANTIOQUIA, FRONTINO / ANTIOQUIA, GUATICA / RISARALDA, MANIZALES / CALDAS, MANZANARES / CALDAS, MEDELLIN / ANTIOQUIA, MONTENEGRO / QUINDIO, PENSILVANIA / CALDAS, PEREIRA / RISARALDA"
+          }
+        }
+      ],
+      "exhausted": false
+    }
+  ]
+}

@@ -46,10 +46,16 @@ class CSPResult:
 def solve(labores: list, clima: list, capacidad: float, hectareas: float = 1.0,
           restricciones: list | None = None, smart: bool = True, max_nodos: int = 200000) -> CSPResult:
     """clima: lista (len=H) con la categoría de lluvia esperada por semana."""
+    if capacidad <= 0 or hectareas <= 0:
+        return CSPResult(False, motivo="Capacidad y hectáreas deben ser positivas.")
+    if not labores or not clima:
+        return CSPResult(False, motivo="Se requieren labores y horizonte de clima.")
+    if len({l.nombre for l in labores}) != len(labores):
+        return CSPResult(False, motivo="Labores duplicadas.")
     H = len(clima)
     names = [l.nombre for l in labores]
     L = {l.nombre: l for l in labores}
-    rest = [r for r in (restricciones or RESTRICCIONES_DEFECTO) if r[0] in L and r[1] in L]
+    rest = [r for r in (RESTRICCIONES_DEFECTO if restricciones is None else restricciones) if r[0] in L and r[1] in L]
     jor = {n: L[n].jornales_ha * hectareas for n in names}
 
     # 1) consistencia de nodo (restricciones unarias + capacidad individual)
@@ -87,11 +93,13 @@ def solve(labores: list, clima: list, capacidad: float, hectareas: float = 1.0,
     def bt(asig, dominios):
         if len(asig) == len(names):
             return dict(asig)
-        if nodos[0] > max_nodos:
+        if nodos[0] >= max_nodos:
             return None
         libres = [n for n in names if n not in asig]
         n = min(libres, key=lambda x: len(dominios[x])) if smart else libres[0]  # MRV vs orden fijo
         for s in sorted(dominios[n]):
+            if nodos[0] >= max_nodos:
+                return None
             nodos[0] += 1
             if not consistente(asig, n, s):
                 continue
@@ -109,6 +117,8 @@ def solve(labores: list, clima: list, capacidad: float, hectareas: float = 1.0,
         return None
 
     sol = bt({}, dom)
+    if sol is None and nodos[0] >= max_nodos:
+        return CSPResult(False, nodos=nodos[0], motivo="Límite de búsqueda alcanzado; factibilidad no determinada.")
     if sol is None:
         return CSPResult(False, nodos=nodos[0], motivo="No existe calendario que cumpla todas las restricciones "
                          "(capacidad de mano de obra, precedencias y clima esperado). Amplíe el horizonte o la capacidad.")

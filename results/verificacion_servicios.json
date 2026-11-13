@@ -1,0 +1,106 @@
+{
+  "utc": "2026-11-13T03:43:04.547730+00:00",
+  "ideam": [
+    {
+      "id": "s54a-sgyg",
+      "metadata_status": 200,
+      "data_status": 200,
+      "nombre": "Precipitación",
+      "muestra": [
+        {
+          "codigoestacion": "0025027770",
+          "codigosensor": "0240",
+          "fechaobservacion": "2017-04-21T18:50:00.000",
+          "valorobservado": "0",
+          "nombreestacion": "MARRALU - LA MOJANA",
+          "departamento": "CÓRDOBA",
+          "municipio": "AYAPEL",
+          "zonahidrografica": "BAJO MAGDALENA- CAUCA -SAN JORGE",
+          "latitud": "8.306",
+          "longitud": "-75.239",
+          "descripcionsensor": "Precipitacion",
+          "unidadmedida": "mm"
+        }
+      ],
+      "prueba_horas": [
+        {
+          "codigoestacion": "0025027770",
+          "dia": "2017-04-21T00:00:00.000",
+          "horas": "22"
+        }
+      ],
+      "descripcion": "Contiene datos sobre la cantidad de lluvia registrada cada 10 minutos en diferentes estaciones meteorológicas ubicadas sobre el territorio colombiano. Los cuales han sido verificados mediante un control de calidad básico, de acuerdo con las recomendaciones de la Organización Meteorológica Mundial (OMM). \nPor lo anterior, se han corregido o eliminado valores que no han cumplido con estos controles y podrían requerir validaciones adicionales según el uso específico. \nEste conjunto de datos puede ser útil para analizar el comportamiento de la precipitación, determinar fenómenos extremos, realizar estudios climáticos e hidrológicos o apoyar sistemas de alerta temprana. \nSe recomienda a los usuarios aplicar criterios adicionales de verificación para usos sensibles o técnicos especializados.\nLos datos disponibles a través de este medio pueden ser libremente consumidos bajo los siguientes clausulas: 1. Los datos a visualizar o descargar a continuación no han sido validados por el IDEAM. 2. Los datos aquí dispuestos son datos crudos instantáneos provenientes de los sensores de las estaciones automáticas de la red propia y/o producto de convenios interadministrativos con terceras entidades. 3. Los datos son puestos a disposición de la ciudadanía como mecanismo de transparencia y para proveer una herramienta de apoyo a la gestión del riesgo territorial y como datos abiertos en cumplimiento de la Ley 1712 de 2014. 4. Es posible que los datos aquí dispuestos tengan cierto retraso en el tiempo debido a las frecuencias de envío de datos de los sensores y los medios de transmisión utilizados. 5. Los datos presenten errores y/o inconsistencias estando incluso por fuera de los límites considerados normales, producto de fallas en los sensores de origen. 6. El posterior uso e interpretación que se le dé para cualquier finalidad queda bajo la exclusiva responsabilidad del portador de los datos. 7. Cualquier destino que se le dé a los datos exime al IDEAM de realizarles cualquier tipo de justificación o iniciarles proceso alguno de validación posterior, cuya fuente primaria deben ser los canales oficialmente dispuestos por la Entidad para el suministro de información oficial y validada. 8. Por las razones expuestas anteriormente los datos dispuestos no podrán ser utilizados como evidencia jurídica ante entes de control acerca de la ocurrencia o no de fenómenos hidro climatológicos o de soporte a cualquier tipo de situación o evento ocurrido como consecuencia de estos.",
+      "url": "https://www.datos.gov.co/resource/s54a-sgyg.json"
+    },
+    {
+      "id": "sbwg-7ju4",
+      "metadata_status": 200,
+      "data_status": 200,
+      "nombre": "Temperatura Ambiente del Aire",
+      "muestra": [
+        {
+          "codigoestacion": "0022055020",
+          "codigosensor": "0068",
+          "fechaobservacion": "2025-01-23T10:00:00.000",
+          "valorobservado": "17.6",
+          "nombreestacion": "MESA DE POLE",
+          "departamento": "TOLIMA",
+          "municipio": "ATACO",
+          "zonahidrografica": "SALDAÑA",
+          "latitud": "3.455777778",
+          "longitud": "-75.53636111",
+          "descripcionsensor": "TEMPERATURA DEL AIRE A 2 m",
+          "unidadmedida": "°C"
+        }
+      ],
+      "prueba_horas": [
+        {
+          "codigoestacion": "0022055020",
+          "dia": "2025-01-23T00:00:00.000",
+          "horas": "24"
+        }
+      ],
+      "descripcion": "Anteriormente este set de datos se denominaba: \"Datos Hidrometeorológicos Crudos - Red de Estaciones IDEAM\" el cual se actualiza por \"Temperatura Ambiente del Aire\".\nContiene datos de la temperatura ambiente del aire registrada cada hora en diferentes estaciones meteorológicas ubicadas en el territorio colombiano. Los cuales han sido verificados mediante un control de calidad básico, de acuerdo con las recomendaciones de la Organización Meteorológica Mundial (OMM). \nPor lo anterior, se han corregido o eliminado valores que no han cumplido con estos controles y podrían requerir validaciones adicionales según el uso específico. \nEste conjunto de datos lo podemos utilizar para establecer el comportamiento diario, mensual y anual de la temperatura máxima del aire, en análisis climatológico y modelos climáticos, así como, en alertas tempranas.\nSe recomienda a los usuarios aplicar criterios adicionales de verificación para usos sensibles o técnicos especializados.\nLos datos disponibles a través de este medio pueden ser libremente consumidos bajo los siguientes clausulas: 1. Los datos a visualizar o descargar a continuación no han sido validados por el IDEAM. 2. Los datos aquí dispuestos son datos crudos instantáneos provenientes de los sensores de las estaciones automáticas de la red propia y/o producto de convenios interadministrativos con terceras entidades. 3. Los datos son puestos a disposición de la ciudadanía como mecanismo de transparencia y para proveer una herramienta de apoyo a la gestión del riesgo territorial y como datos abiertos en cumplimiento de la Ley 1712 de 2014. 4. Es posible que los datos aquí dispuestos tengan cierto retraso en el tiempo debido a las frecuencias de envío de datos de los sensores y los medios de transmisión utilizados. 5. Los datos presenten errores y/o inconsistencias estando incluso por fuera de los límites considerados normales, producto de fallas en los sensores de origen. 6. El posterior uso e interpretación que se le dé para cualquier finalidad queda bajo la exclusiva responsabilidad del portador de los datos. 7. Cualquier destino que se le dé a los datos exime al IDEAM de realizarles cualquier tipo de justificación o iniciarles proceso alguno de validación posterior, cuya fuente primaria deben ser los canales oficialmente dispuestos por la Entidad para el suministro de información oficial y validada. 8. Por las razones expuestas anteriormente los datos dispuestos no podrán ser utilizados como evidencia jurídica ante entes de control acerca de la ocurrencia o no de fenómenos hidro climatológicos o de soporte a cualquier tipo de situación o evento ocurrido como consecuencia de estos.",
+      "url": "https://www.datos.gov.co/resource/sbwg-7ju4.json"
+    },
+    {
+      "id": "uext-mhny",
+      "metadata_status": 200,
+      "data_status": 200,
+      "nombre": "Humedad del Aire",
+      "muestra": [
+        {
+          "codigoestacion": "0024015300",
+          "codigosensor": "0027",
+          "fechaobservacion": "2021-07-17T15:00:00.000",
+          "valorobservado": "48",
+          "nombreestacion": "VILLA DE LEIVA  - AUT",
+          "departamento": "BOYACÁ",
+          "municipio": "VILLA DE LEIVA",
+          "zonahidrografica": "SOGAMOSO",
+          "latitud": "5.655833333",
+          "longitud": "-73.54394444",
+          "descripcionsensor": "Humedad del aire 2 mt",
+          "unidadmedida": "%"
+        }
+      ],
+      "prueba_horas": [
+        {
+          "codigoestacion": "0024015300",
+          "dia": "2021-07-17T00:00:00.000",
+          "horas": "24"
+        }
+      ],
+      "descripcion": "Contiene datos de humedad del aire registrada a 2 metros y cada hora en diferentes estaciones meteorológicas ubicadas en el territorio colombiano. Los cuales han sido verificados mediante un control de calidad básico, de acuerdo con las recomendaciones de la Organización Meteorológica Mundial (OMM). \nPor lo anterior, se han corregido o eliminado valores que no han cumplido con estos controles y podrían requerir validaciones adicionales según el uso específico. \nEste conjunto de datos lo podemos utilizar para establecer el comportamiento diario, mensual y anual de la humedad, así como, en análisis climatológico y modelos climáticos y en alertas tempranas.\nSe recomienda a los usuarios aplicar criterios adicionales de verificación para usos sensibles o técnicos especializados.\nLos datos disponibles a través de este medio pueden ser libremente consumidos bajo los siguientes clausulas: 1. Los datos a visualizar o descargar a continuación no han sido validados por el IDEAM. 2. Los datos aquí dispuestos son datos crudos instantáneos provenientes de los sensores de las estaciones automáticas de la red propia y/o producto de convenios interadministrativos con terceras entidades. 3. Los datos son puestos a disposición de la ciudadanía como mecanismo de transparencia y para proveer una herramienta de apoyo a la gestión del riesgo territorial y como datos abiertos en cumplimiento de la Ley 1712 de 2014. 4. Es posible que los datos aquí dispuestos tengan cierto retraso en el tiempo debido a las frecuencias de envío de datos de los sensores y los medios de transmisión utilizados. 5. Los datos presenten errores y/o inconsistencias estando incluso por fuera de los límites considerados normales, producto de fallas en los sensores de origen. 6. El posterior uso e interpretación que se le dé para cualquier finalidad queda bajo la exclusiva responsabilidad del portador de los datos. 7. Cualquier destino que se le dé a los datos exime al IDEAM de realizarles cualquier tipo de justificación o iniciarles proceso alguno de validación posterior, cuya fuente primaria deben ser los canales oficialmente dispuestos por la Entidad para el suministro de información oficial y validada. 8. Por las razones expuestas anteriormente los datos dispuestos no podrán ser utilizados como evidencia jurídica ante entes de control acerca de la ocurrencia o no de fenómenos hidro climatológicos o de soporte a cualquier tipo de situación o evento ocurrido como consecuencia de estos.",
+      "url": "https://www.datos.gov.co/resource/uext-mhny.json"
+    }
+  ],
+  "nvidia": {
+    "modelo": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "tool_calling_ok": true,
+    "tools": [
+      "search_docs"
+    ],
+    "tokens": 366
+  }
+}

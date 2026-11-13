@@ -1,0 +1,26 @@
+{
+  "alcance": "Tres muestras, no verificación exhaustiva de extracción ni sensores. Comparación contra API pública actual; la fuente puede cambiar.",
+  "muestras": [
+    {
+      "dataset": "s54a-sgyg",
+      "estacion": "0026125710",
+      "dia": "2022-03-01",
+      "estado": "no se pudo contrastar",
+      "error": "ReadTimeout"
+    },
+    {
+      "dataset": "uext-mhny",
+      "estacion": "0026180250",
+      "dia": "2026-08-12",
+      "estado": "no se pudo contrastar",
+      "error": "ReadTimeout"
+    },
+    {
+      "dataset": "sbwg-7ju4",
+      "estacion": "0027010810",
+      "dia": "2026-10-31",
+      "estado": "no se pudo contrastar",
+      "error": "ReadTimeout"
+    }
+  ]
+}

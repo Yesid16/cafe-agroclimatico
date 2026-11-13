@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
-# Pipeline completo y reproducible: datos reales → modelo → evaluación → app
-set -e
-python -m cafe.data_download --desde 2022-01-01
+# Ejecutar en CPU de nube; no entrena un LLM.
+set -euo pipefail
+python -m cafe.verify_services
+python -m cafe.fetch_corpus
+python -m cafe.data_download --desde 2022-01-01 --hasta 2026-10-31
 python -m cafe.data_prep
 python -m cafe.risk_model
+python -m cafe.evaluate_csp
 python -m cafe.evaluate_agent --mock
-streamlit run app.py
+python -m cafe.evaluate_agent
+python -m cafe.check_delivery
