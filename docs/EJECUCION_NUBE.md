@@ -1,6 +1,6 @@
 # Ejecución en nube y recuperación de resultados
 
-No hay una conexión MCP de Colab disponible en esta sesión. El notebook notebooks/02_Colab_pipeline.ipynb automatiza el flujo mediante Colab manual, sin entrenar en el PC.
+ El notebook notebooks/02_Colab_pipeline.ipynb automatiza el flujo mediante Colab manual, sin entrenar en el PC.
 
 1. En PowerShell: **python scripts/package_colab.py**. Solo comprime código y documentos; excluye .env, .git, .venv, datos y modelos.
 2. Abre https://colab.research.google.com/ y sube notebooks/02_Colab_pipeline.ipynb.

@@ -110,7 +110,8 @@ with tabs[0]:
     else:
         fig = px.scatter_map(mp, lat="lat", lon="lon", color="riesgo", color_discrete_map=COL, size="p_alto", size_max=22,
                              hover_name="municipio", hover_data={"p_alto": ":.2f", "ultimo_dato": True, "lat": False, "lon": False},
-                             zoom=7, height=520, category_orders={"riesgo": ["Bajo", "Medio", "Alto"]})
+                             center={"lat": 4.5, "lon": -73.5}, zoom=4, height=520,
+                             category_orders={"riesgo": ["Bajo", "Medio", "Alto"]})
         fig.update_layout(map_style="carto-positron", margin=dict(l=0, r=0, t=0, b=0))
         show_chart(fig)
         st.caption("Color = riesgo climático más probable de roya la semana siguiente; tamaño = P(riesgo Alto). Municipios con estaciones IDEAM.")

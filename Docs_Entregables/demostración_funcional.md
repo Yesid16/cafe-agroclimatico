@@ -2,12 +2,12 @@
 SI3003 · EAFIT · Grupo Jueves · Proyecto 3.5
 Jhon Jairo Pulgarin, Yesid Hurtado y Frank López
 
-Aplicación web:
+Aplicación web: https://cafeagro.streamlit.app/
 
 
 Municipio y fecha de referencia: Abriaqui, 2026/11/01
 
-Video de respaldo, opcional: [Enlace]
+Video de respaldo, opcional: https://youtu.be/JcUsW-5Ro-I
 
 ## Vista general del dashboard
 

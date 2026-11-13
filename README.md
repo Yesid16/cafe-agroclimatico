@@ -1,10 +1,24 @@
 # Asistente agroclimático para café
 
-**Aplicación web / dashboard interactivo:** 
+**Aplicación web / dashboard interactivo:** https://cafeagro.streamlit.app/
+
+**Video demostración:** https://youtu.be/JcUsW-5Ro-I
 
 **Universidad EAFIT · SI3003 Inteligencia Artificial · Proyecto 3.5 · Grupo Jueves**
 
 **Integrantes:** Jhon Jairo Pulgarin, Yesid Hurtado y Frank López.
+
+## Entregables
+
+| Entregable | Documento o ubicación |
+|---|---|
+| Código e instrucciones de ejecución | Este repositorio y la sección de ejecución. |
+| Informe breve de cuatro páginas | [Informe del proyecto](Docs_Entregables/INFORME.pdf). |
+| Demostración funcional | [Documento de demostración](Docs_Entregables/demostración_funcional.md), con espacio para el enlace y las capturas del dashboard. |
+| Evaluación del agente | [Evaluación de las 12 preguntas](Docs_Entregables/evaluacion_agente.pdf). |
+| Declaración de uso de IA generativa | [Declaración de uso de IA](Docs_Entregables/declaracion_uso_IA.pdf). |
+
+La carpeta [Docs_Entregables](Docs_Entregables) reúne el informe, la evaluación del agente y la declaración de IA en PDF, junto con la demostración funcional en Markdown. Las evidencias de evaluación se conservan en results/.
 
 ## Descripción
 
@@ -46,17 +60,7 @@ La red bayesiana supera la referencia mayoritaria, pero no supera a persistencia
 
 La evaluación revisada del agente incluye **12 preguntas**: seleccionó correctamente las herramientas en **10 de 12** y entregó citas válidas en los **10 casos que las requerían**. Las respuestas originales del modelo citaron correctamente en 5 de esos 10 casos; seis respuestas fueron reemplazadas por resúmenes de las herramientas. La evaluación conserva las respuestas, las llamadas realizadas y los fallos encontrados.
 
-## Entregables
 
-| Entregable | Documento o ubicación |
-|---|---|
-| Código e instrucciones de ejecución | Este repositorio y la sección de ejecución. |
-| Informe breve de cuatro páginas | [Informe del proyecto](Docs_Entregables/INFORME.pdf). |
-| Demostración funcional | [Documento de demostración](Docs_Entregables/demostración_funcional.md), con espacio para el enlace y las capturas del dashboard. |
-| Evaluación del agente | [Evaluación de las 12 preguntas](Docs_Entregables/evaluacion_agente.pdf). |
-| Declaración de uso de IA generativa | [Declaración de uso de IA](Docs_Entregables/declaracion_uso_IA.pdf). |
-
-La carpeta [Docs_Entregables](Docs_Entregables) reúne el informe, la evaluación del agente y la declaración de IA en PDF, junto con la demostración funcional en Markdown. Las evidencias de evaluación se conservan en results/.
 
 ## Ejecución de la aplicación
 
@@ -69,7 +73,7 @@ python -m streamlit run app.py
 
 La aplicación utiliza los datos procesados y el modelo entrenado incluidos en el repositorio; abrirla no requiere descargar nuevamente los históricos ni repetir el entrenamiento. Las consultas al modelo de lenguaje se ejecutan en NVIDIA.
 
-La reproducción de la descarga, el entrenamiento y las evaluaciones se realiza en Google Colab mediante el [notebook del proyecto](notebooks/02_Colab_pipeline.ipynb). El procedimiento está documentado en la [guía de ejecución en nube](docs/EJECUCION_NUBE.md).
+La reproducción de la descarga, el entrenamiento y las evaluaciones se realiza en Google Colab mediante el [notebook del proyecto](notebooks/02_Colab_pipeline.ipynb). El procedimiento está documentado en la [guía de ejecución en nube](docs/EJECUCION_NUBE.md). Este sirve de guía si se quiere hacer todo el proceso de extracción de los datos, entrenamiento del modelo, etc.
 
 ## Alcance y limitaciones
 

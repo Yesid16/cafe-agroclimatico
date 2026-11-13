@@ -35,19 +35,6 @@ Resultados separados en eval_agente_llm_revisado.json, con raw_answer, answer_so
 
 La reevaluación se bloqueó inicialmente por revisión automática del envío de contenido; después el usuario autorizó explícitamente las preguntas, datos agregados y fragmentos públicos a NVIDIA. Se encontró además endpoint/modelo vacíos en el .env local y se completaron conservando la clave. El intento incompleto queda separado en results/diagnostico_configuracion/; no es evidencia de desempeño del LLM.
 
-## Entregables y reproducción
-
-- Informe de cuatro páginas generado y revisado visualmente.
-- Dataset semanal y modelo de Colab permitidos por .gitignore para preparar una demo desde GitHub; aún no se publicaron ni se hizo commit.
-- README actualizado: abrir la instantánea con streamlit run app.py sin reentrenar.
-- Evaluaciones originales, revisión del agente y declaración de IA actualizadas con resultados reales.
-- Dependencias principales locales coinciden con results/entorno.txt de Colab.
-- Dashboard verificado programáticamente con artefactos reales; la demo interactiva y el aporte/comprensión de cada integrante requieren revisión del equipo.
-- Pruebas automáticas pequeñas: 40 pasaron, con datos sintéticos solo para verificar código. No sustituyen resultados reales.
-
-La guía EAFIT exige técnica propia y comparación, agente/RAG y >=2 herramientas, >=2 visualizaciones, interacción/chat, repositorio reproducible, 10-15 preguntas, informe <=4 páginas y declaración de IA. La implementación y las evidencias están presentes. Quedan limitaciones de datos, dos fallos de herramientas del agente revisado e inspección interactiva; no se certifica una entrega sin defectos.
-
-Entrega según guía: viernes 13/11/2026, 6:00 p. m.; cada integrante envía el repositorio al correo indicado en el PDF, con asunto si3003-AI-grupo-nombre. No se envió correo ni se publicó el repositorio durante esta revisión.
 
 ## Revisión diaria posterior
 
