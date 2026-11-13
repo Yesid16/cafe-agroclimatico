@@ -20,6 +20,8 @@
 
 La carpeta [Docs_Entregables](Docs_Entregables) reúne el informe, la evaluación del agente y la declaración de IA en PDF, junto con la demostración funcional en Markdown. Las evidencias de evaluación se conservan en results/.
 
+**Aclaración** En la carpeta [docs](docs), hay también análisis más rigorosos de los errores, problemas y evaluaciones del modelo.
+
 ## Descripción
 
 Aplicación web para explorar las condiciones climáticas de municipios cafeteros, estimar la favorabilidad climática de la roya y organizar labores agrícolas. Integra datos históricos del IDEAM, un modelo propio y un asistente que consulta datos y publicaciones técnicas de Cenicafé.
