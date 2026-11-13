@@ -1,6 +1,6 @@
 # Revisión posterior a la ejecución de Colab
 
-**Estado:** se recuperaron y auditaron los artefactos reales. El informe está en output/pdf/INFORME.pdf (cuatro páginas) y docs/INFORME.md. Se cargó el dashboard sin excepciones con los archivos extraídos. No se reentrenó el modelo localmente.
+**Estado:** se recuperaron y auditaron los artefactos reales. El informe está en Docs_Entregables/INFORME.pdf (cuatro páginas) y docs/INFORME.md. Se cargó el dashboard sin excepciones con los archivos extraídos. No se reentrenó el modelo localmente.
 
 ## Datos
 

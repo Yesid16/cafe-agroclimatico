@@ -4,6 +4,7 @@ param([switch]$OnlyReport)
 $ErrorActionPreference = 'Stop'
 $deliveryProject = Split-Path -Parent $PSScriptRoot
 $deliveryRoot = Join-Path $deliveryProject 'Docs_Entregables'
+$deliverySources = Join-Path $deliveryProject 'tmp/documentos_editables'
 $deliveryNames = if ($OnlyReport) { @('INFORME') } else {
     @('INFORME', 'evaluacion_agente', 'declaracion_uso_IA')
 }
@@ -12,7 +13,7 @@ $deliveryWord.Visible = $false
 $deliveryWord.DisplayAlerts = 0
 try {
     foreach ($deliveryName in $deliveryNames) {
-        $deliveryDoc = $deliveryWord.Documents.Open((Join-Path $deliveryRoot ($deliveryName + '.docx')), $false, $true)
+        $deliveryDoc = $deliveryWord.Documents.Open((Join-Path $deliverySources ($deliveryName + '.docx')), $false, $true)
         try {
             $deliveryDoc.ExportAsFixedFormat((Join-Path $deliveryRoot ($deliveryName + '.pdf')), 17)
             Write-Output ('PDF: ' + $deliveryName)
@@ -22,6 +23,3 @@ try {
     $deliveryWord.Quit()
     [void][Runtime.InteropServices.Marshal]::ReleaseComObject($deliveryWord)
 }
-$deliveryOutput = Join-Path $deliveryProject 'output/pdf'
-New-Item -ItemType Directory -Force -Path $deliveryOutput | Out-Null
-Copy-Item -LiteralPath (Join-Path $deliveryRoot 'INFORME.pdf') -Destination (Join-Path $deliveryOutput 'INFORME.pdf')

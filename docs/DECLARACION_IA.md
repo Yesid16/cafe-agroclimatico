@@ -14,12 +14,4 @@ NVIDIA NIM sirve el modelo nvidia/nemotron-3.5-lightning-30b-a3b del agente. Su 
 
 El equipo ejecutó el procesamiento, entrenamiento y evaluación originales en Colab y recuperó los resultados. La revisión posterior incluyó pruebas de implementación, auditoría de datos y una reevaluación remota autorizada. Los experimentos de entrenamiento no se realizaron en el equipo local.
 
-El uso de estas herramientas no sustituye la revisión del trabajo ni la comprensión de sus métodos. Los resultados y las limitaciones se conservan en los documentos de entrega. La confirmación de los aportes individuales y del uso histórico de IA corresponde a cada integrante.
-
-## Aportes individuales
-
-| Integrante | Aportes realizados | Confirmación de revisión |
-|---|---|---|
-| Jhon Jairo Pulgarin | [Por registrar] | [Por confirmar] |
-| Yesid Hurtado | [Por registrar] | [Por confirmar] |
-| Frank López | [Por registrar] | [Por confirmar] |
+El uso de estas herramientas no sustituye la revisión del trabajo ni la comprensión de sus métodos. Los resultados y las limitaciones se conservan en los documentos de entrega. La revisión y comprensión del trabajo corresponden al equipo.

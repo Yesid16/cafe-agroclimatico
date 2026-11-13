@@ -12,7 +12,8 @@ from formalize_deliverables import write_report
 
 
 def build():
-    builder.OUT.mkdir(exist_ok=True)
+    builder.OUT.mkdir(parents=True, exist_ok=True)
+    builder.DELIVERY.mkdir(exist_ok=True)
     write_report(builder)
     if sys.platform == "win32":
         subprocess.run(["powershell.exe", "-NoProfile", "-File",
@@ -22,11 +23,8 @@ def build():
         if not soffice:
             raise RuntimeError("Informe DOCX creado. La exportación PDF requiere LibreOffice o Microsoft Word.")
         subprocess.run([soffice, "--headless", "--convert-to", "pdf", "--outdir",
-            str(builder.OUT), str(builder.OUT / "INFORME.docx")], check=True)
-        output = builder.ROOT / "output/pdf"
-        output.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(builder.OUT / "INFORME.pdf", output / "INFORME.pdf")
-    pages = len(PdfReader(builder.OUT / "INFORME.pdf").pages)
+            str(builder.DELIVERY), str(builder.OUT / "INFORME.docx")], check=True)
+    pages = len(PdfReader(builder.DELIVERY / "INFORME.pdf").pages)
     if pages != 4:
         raise RuntimeError(f"Revisar extensión y formato: {pages} páginas; se requieren cuatro.")
     print("Informe académico: cuatro páginas.")

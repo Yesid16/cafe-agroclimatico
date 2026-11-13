@@ -52,11 +52,11 @@ La evaluación revisada del agente incluye **12 preguntas**: seleccionó correct
 |---|---|
 | Código e instrucciones de ejecución | Este repositorio y la sección de ejecución. |
 | Informe breve de cuatro páginas | [Informe del proyecto](Docs_Entregables/INFORME.pdf). |
-| Demostración funcional | [Documento de demostración](Docs_Entregables/demostración_funcional.docx), con espacio para el enlace y las capturas del dashboard. |
+| Demostración funcional | [Documento de demostración](Docs_Entregables/demostración_funcional.md), con espacio para el enlace y las capturas del dashboard. |
 | Evaluación del agente | [Evaluación de las 12 preguntas](Docs_Entregables/evaluacion_agente.pdf). |
 | Declaración de uso de IA generativa | [Declaración de uso de IA](Docs_Entregables/declaracion_uso_IA.pdf). |
 
-La carpeta [Docs_Entregables](Docs_Entregables/README.md) reúne los documentos, sus versiones editables y los anexos de evidencia.
+La carpeta [Docs_Entregables](Docs_Entregables) reúne el informe, la evaluación del agente y la declaración de IA en PDF, junto con la demostración funcional en Markdown. Las evidencias de evaluación se conservan en results/.
 
 ## Ejecución de la aplicación
 

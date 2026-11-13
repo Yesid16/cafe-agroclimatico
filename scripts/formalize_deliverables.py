@@ -102,8 +102,8 @@ def write_declaration(b):
          'La revisión posterior incluyó pruebas de implementación, auditoría de datos y una reevaluación remota autorizada. '
          'Los experimentos de entrenamiento no se realizaron en el equipo local.'),
         ('', 'El uso de estas herramientas no sustituye la revisión del trabajo ni la comprensión de sus métodos. '
-         'Los resultados y las limitaciones se conservan en los documentos de entrega. La confirmación de los aportes '
-         'individuales y del uso histórico de IA corresponde a cada integrante.'),
+         'Los resultados y las limitaciones se conservan en los documentos de entrega. La revisión y comprensión '
+         'del trabajo corresponden al equipo.'),
     ]
     md = ['# Declaración de uso de inteligencia artificial generativa', b.META, b.TEAM, '']
     for heading, text in sections:
@@ -112,14 +112,6 @@ def write_declaration(b):
             md += ['## ' + heading, '']
         doc.add_paragraph(text)
         md += [text, '']
-    doc.add_heading('Aportes individuales', 1)
-    rows = [['Integrante', 'Aportes realizados', 'Confirmación de revisión'],
-            ['Jhon Jairo Pulgarin', '[Por registrar]', '[Por confirmar]'],
-            ['Yesid Hurtado', '[Por registrar]', '[Por confirmar]'],
-            ['Frank López', '[Por registrar]', '[Por confirmar]']]
-    b.table(doc, rows, [2.2, 2.15, 2.15], 'Registro de aportes y revisión individual')
-    md += ['## Aportes individuales', '', '| Integrante | Aportes realizados | Confirmación de revisión |', '|---|---|---|']
-    md += ['| ' + ' | '.join(row) + ' |' for row in rows[1:]]
     doc.save(b.OUT / 'declaracion_uso_IA.docx')
     text = '\n'.join(md)
     (b.OUT / 'declaracion_uso_IA.md').write_text(text, encoding='utf-8')

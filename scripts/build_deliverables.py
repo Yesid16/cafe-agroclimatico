@@ -16,7 +16,8 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'Docs_Entregables'
+OUT = ROOT / 'tmp' / 'documentos_editables'
+DELIVERY = ROOT / 'Docs_Entregables'
 TEAM = 'Jhon Jairo Pulgarin, Yesid Hurtado y Frank López'
 META = 'SI3003 · EAFIT · Grupo Jueves · Proyecto 3.5'
 
@@ -211,7 +212,7 @@ def write_eval():
                 'Las preguntas se conocían durante el desarrollo; falta un conjunto independiente. '
                 'La evaluación automática no certifica calidad agronómica, fidelidad completa de las respuestas ni disponibilidad continua del servicio.')
             doc.add_paragraph(limitations)
-            doc.add_paragraph("Las respuestas completas y las trazas se conservan en Anexos/eval_agente_llm.json y Anexos/eval_agente_llm_revisado.json.")
+            doc.add_paragraph("Las respuestas completas y las trazas se conservan en results/eval_agente_llm.json y results/eval_agente_llm_revisado.json, en el repositorio.")
             md += ['', '## Fallos y límites de la evaluación', limitations]
     doc.save(OUT / 'evaluacion_agente.docx')
     (OUT / 'evaluacion_agente.md').write_text('\n'.join(md), encoding='utf-8')
@@ -228,53 +229,27 @@ def placeholder(doc, label, height=3.3):
 
 
 def main():
-    OUT.mkdir(exist_ok=True)
-    annex = OUT / 'Anexos'
-    annex.mkdir(exist_ok=True)
     import sys
     import formalize_deliverables as formal
-    formal.write_report(sys.modules[__name__])
+    OUT.mkdir(parents=True, exist_ok=True)
+    DELIVERY.mkdir(exist_ok=True)
+    annex = DELIVERY / 'Anexos'
+    annex.mkdir(exist_ok=True)
     for name in ('eval_agente_llm.json', 'eval_agente_llm_revisado.json', 'eval_agente_mock.json',
                  'metricas_modelo.json', 'metricas_modelo.md', 'eval_csp.json', 'eval_csp.md'):
         copy2(ROOT / 'results' / name, annex / name)
     copy2(ROOT / 'corpus/FUENTES.md', annex / 'FUENTES.md')
     copy2(ROOT / 'data/raw/manifest.json', annex / 'manifiesto_datos.json')
+    formal.write_report(sys.modules[__name__])
     write_eval()
     formal.write_declaration(sys.modules[__name__])
-    formal.write_demo(sys.modules[__name__])
-    (OUT / 'README.md').write_text('''# Documentos de entrega
-
-**Aplicación web:** [ENLACE DE LA APP DESPLEGADA]
-
-**Universidad EAFIT · SI3003 Inteligencia Artificial · Proyecto 3.5 · Grupo Jueves**
-
-**Integrantes:** Jhon Jairo Pulgarin, Yesid Hurtado y Frank López.
-
-Esta carpeta reúne la documentación del Asistente agroclimático para café, de acuerdo con los entregables de la guía del proyecto final.
-
-## Documentos principales
-
-| Entregable | Documento | Versión editable |
-|---|---|---|
-| Informe breve de cuatro páginas | [Informe del proyecto](INFORME.pdf) | [Word](INFORME.docx) y [Markdown](INFORME.md) |
-| Demostración funcional | [Demostración del dashboard](demostración_funcional.docx) | [Markdown](demostración_funcional.md) |
-| Evaluación del agente con 12 preguntas | [Evaluación del agente](evaluacion_agente.pdf) | [Word](evaluacion_agente.docx) y [Markdown](evaluacion_agente.md) |
-| Declaración de uso de IA generativa | [Declaración de uso de IA](declaracion_uso_IA.pdf) | [Word](declaracion_uso_IA.docx) y [Markdown](declaracion_uso_IA.md) |
-| Repositorio e instrucciones de ejecución | [Repositorio GitHub](https://github.com/Yesid16/cafe-agroclimatico) | [README del proyecto](../README.md) |
-
-El documento de demostración contiene los espacios para el enlace público y las capturas de las seis vistas del dashboard. La declaración incluye un apartado de aportes individuales para el registro de cada integrante.
-
-## Anexos de evidencia
-
-La carpeta [Anexos](Anexos) contiene las evaluaciones original y revisada del agente, las respuestas y llamadas a herramientas, la evaluación del modo demostración, las métricas del modelo y del planificador, las fuentes documentales y el manifiesto de datos.
-
-Los anexos complementan el informe principal y conservan los resultados y las limitaciones de las ejecuciones registradas.
-
-## Reproducibilidad
-
-El código, los datos procesados y el modelo entrenado están incluidos en el repositorio. La ejecución del dashboard se describe en el [README principal](../README.md). La reproducción de los experimentos en Colab está documentada en la [guía de ejecución en nube](../docs/EJECUCION_NUBE.md).
-''', encoding='utf-8')
-    print('Documentos organizados en', OUT)
+    # La demostración se conserva para permitir completar el enlace y las capturas.
+    demo = DELIVERY / 'demostración_funcional.md'
+    if not demo.exists():
+        formal.write_demo(sys.modules[__name__])
+        copy2(OUT / 'demostración_funcional.md', demo)
+    print('Fuentes editables en', OUT)
+    print('Entrega: PDF y demostración en Markdown en', DELIVERY)
 
 
 if __name__ == '__main__':

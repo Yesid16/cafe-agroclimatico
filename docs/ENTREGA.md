@@ -5,7 +5,7 @@
 - [x] Entrenamiento y métricas reales del modelo frente a tres referencias en Colab.
 - [x] Evaluaciones original y revisada del agente, doce preguntas, respuestas y trazas; fallos conservados.
 - [x] Auditoría de CSV diarios, sensibilidad conservadora entrenada en Colab y comparación documentada.
-- [x] Informe: output/pdf/INFORME.pdf, cuatro páginas.
+- [x] Informe: Docs_Entregables/INFORME.pdf, cuatro páginas.
 - [x] Declaración de IA: docs/DECLARACION_IA.md.
 - [x] README, dependencias, artefactos de ambas variantes y pruebas.
 - [x] Carga programática del dashboard con artefactos reales, seis pestañas.

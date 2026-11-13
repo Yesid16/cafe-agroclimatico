@@ -26,7 +26,7 @@ def main():
                      or (parts[0]=='results' and len(parts)==2 and p.suffix in {'.json','.md','.csv','.txt'})
                      or (parts[:2]==('data','raw') and p.suffix=='.json')
                      or (parts[:2] in {('results','revision_diaria'),('results','revision_calidad')} and p.suffix in {'.json','.csv','.md'})
-                     or name=='output/pdf/INFORME.pdf')
+                     or name=='Docs_Entregables/INFORME.pdf')
             if not allowed or p.name=='.env' or p.suffix in {'.zip','.pyc'}:
                 continue
             z.write(p,name)
@@ -34,7 +34,7 @@ def main():
     with ZipFile(output) as z:
         assert z.testzip() is None
         assert 'data/processed/semanal.csv' in z.namelist()
-        assert 'output/pdf/INFORME.pdf' in z.namelist()
+        assert 'Docs_Entregables/INFORME.pdf' in z.namelist()
         assert not any(p=='.env' or p.endswith('/.env') for p in z.namelist())
     print(output, count, 'archivos', round(output.stat().st_size/1024/1024,1),'MiB')
 
